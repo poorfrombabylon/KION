@@ -28,9 +28,5 @@ func handle228(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handle228)
 
-	http.HandleFunc("/hello", func(writer http.ResponseWriter, request *http.Request) {
-		writer.Write([]byte("hello"))
-	})
-
 	http.ListenAndServe(":8080", nil)
 }
