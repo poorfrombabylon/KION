@@ -1,4 +1,4 @@
 # KION
 KION project MTS feat. HSE
 
-Запускаешь проект. Заходишь на localhost:8080 и кайфуешь.
+https://edtech17.notion.site/KION-403c865693054d1196a692ddcaba9923
