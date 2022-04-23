@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "KION/specs/gen";
+
+service KionService {
+  // Создание и получение записи
+  rpc GetOrCreateRecord(GetOrCreateRecordRequest) returns (GetOrCreateRecordResponse) {}
+}
+
+message GetOrCreateRecordRequest{
+  string video_id = 1;
+  string user_id = 2;
+  string event_type = 3;
+  string video_time = 4;
+}
+
+message GetOrCreateRecordResponse{
+  string video_id = 1;
+  string event_type = 2;
+  string video_time = 3;
+}
