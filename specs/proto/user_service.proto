@@ -13,7 +13,7 @@ message CreateRecordRequest{
   string video_id = 1;
   string user_id = 2;
   string event_type = 3;
-  Time time = 4;
+  Duration time = 4;
 }
 
 message CreateRecordResponse{
@@ -25,10 +25,10 @@ message GetLatestRecordRequest{
 }
 
 message GetLatestRecordResponse{
-  Time time = 1;
+  Duration time = 1;
 }
 
-message Time {
+message Duration {
   int32 hours = 1;
   int32 minutes = 2;
   int32 second = 3;

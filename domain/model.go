@@ -8,7 +8,7 @@ import (
 type Model struct {
 	videoID   uuid.UUID
 	userID    uuid.UUID
-	videoTime string
+	videoTime time.Duration
 	eventType Event
 	eventTime time.Time
 }
@@ -21,7 +21,7 @@ func (m Model) GetUserID() uuid.UUID {
 	return m.userID
 }
 
-func (m Model) GetVideoTime() string {
+func (m Model) GetVideoTime() time.Duration {
 	return m.videoTime
 }
 func (m Model) GetEvent() Event {
