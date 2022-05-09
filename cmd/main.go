@@ -19,6 +19,7 @@ var UrlHello = []byte(`
 
 func handle228(w http.ResponseWriter, r *http.Request) {
 	w.Write(UrlHello)
+	db()
 	name := r.FormValue("userName")
 	if name != "" {
 		w.Write([]byte("Hello " + name))
