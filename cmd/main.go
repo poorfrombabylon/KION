@@ -70,6 +70,11 @@ func main() {
 	if err := conn.Exec(ctx, createTableQuery); err != nil {
 		log.Fatal(err)
 	}
+<<<<<<< HEAD
+=======
+
+	http.HandleFunc("/", handle228)
+>>>>>>> 90307160c99054b64b0648aeb83a4069ff386831
 
 	http.HandleFunc("/", handle228)
 
