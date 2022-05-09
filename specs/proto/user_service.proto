@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+option go_package = "../gen";
+
+service KionService {
+  // Создание записи
+  rpc CreateRecord(CreateRecordRequest) returns (CreateRecordResponse);
+  // Получение записи
+  rpc GetLatestRecord(GetLatestRecordRequest) returns (GetLatestRecordResponse);
+}
+
+message CreateRecordRequest{
+  string video_id = 1;
+  string user_id = 2;
+  string event_type = 3;
+  Duration time = 4;
+}
+
+message CreateRecordResponse{
+}
+
+message GetLatestRecordRequest{
+  string user_id = 1;
+  string video_id = 2;
+}
+
+message GetLatestRecordResponse{
+  Duration time = 1;
+}
+
+message Duration {
+  int32 hours = 1;
+  int32 minutes = 2;
+  int32 seconds = 3;
+}
