@@ -10,7 +10,20 @@ type Model struct {
 	userID    uuid.UUID
 	videoTime time.Duration
 	eventType Event
-	eventTime time.Time
+}
+
+func NewModel(
+	videoID uuid.UUID,
+	userID uuid.UUID,
+	videoTime time.Duration,
+	eventType Event,
+) Model {
+	return Model{
+		videoID:   videoID,
+		userID:    userID,
+		videoTime: videoTime,
+		eventType: eventType,
+	}
 }
 
 func (m Model) GetVideoID() uuid.UUID {
@@ -26,8 +39,4 @@ func (m Model) GetVideoTime() time.Duration {
 }
 func (m Model) GetEvent() Event {
 	return m.eventType
-}
-
-func (m Model) GetEventTime() time.Time {
-	return m.eventTime
 }
