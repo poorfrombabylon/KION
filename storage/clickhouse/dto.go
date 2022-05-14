@@ -1,4 +1,4 @@
-package storage
+package clickhouse
 
 import (
 	"github.com/google/uuid"
