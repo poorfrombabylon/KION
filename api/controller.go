@@ -5,6 +5,7 @@ import (
 	record "KION/service/record"
 	"KION/specs/gen"
 	"context"
+	"fmt"
 	"google.golang.org/protobuf/types/known/durationpb"
 )
 
@@ -31,6 +32,8 @@ func (c controller) CreateRecord(
 	ctx context.Context,
 	request *gen.CreateRecordRequest,
 ) (*gen.CreateRecordResponse, error) {
+	fmt.Println("Controller CreateRecord")
+
 	videoID, err := convertVideoID(request.GetVideoId())
 	if err != nil {
 		return nil, err
@@ -67,6 +70,8 @@ func (c controller) GetLatestRecord(
 	ctx context.Context,
 	request *gen.GetLatestRecordRequest,
 ) (*gen.GetLatestRecordResponse, error) {
+	fmt.Println("Controller GetLatestRecord")
+
 	userID, err := transformUserID(request.GetUserId())
 	if err != nil {
 		return nil, err

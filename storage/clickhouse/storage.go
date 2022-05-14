@@ -4,6 +4,7 @@ import (
 	"KION/domain"
 	"context"
 	"database/sql"
+	"fmt"
 	"time"
 )
 
@@ -23,9 +24,11 @@ func NewRecordStorage(db sql.DB) Storage {
 }
 
 func (r *RecordStorage) CreateRecord(ctx context.Context, model domain.Model) error {
+	fmt.Println("Storage CreateRecord")
 	return nil
 }
 
 func (r *RecordStorage) GetLatestRecord(ctx context.Context, userID domain.UserID, videoID domain.VideoID) (time.Duration, error) {
+	fmt.Println("Storage GetLatestRecord")
 	return time.Duration(1), nil
 }
