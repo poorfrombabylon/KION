@@ -8,12 +8,12 @@ import (
 
 type RecordService interface {
 	CreateRecord(context.Context, domain.Model) error
-	GetRecord(context.Context, domain.UserID, domain.VideoID) (time.Duration, error)
+	GetLatestRecord(context.Context, domain.UserID, domain.VideoID) (time.Duration, error)
 }
 
 type RecordStorage interface {
 	CreateRecord(context.Context, domain.Model) error
-	GetRecord(context.Context, domain.UserID, domain.VideoID) (time.Duration, error)
+	GetLatestRecord(context.Context, domain.UserID, domain.VideoID) (time.Duration, error)
 }
 
 type service struct {
@@ -30,6 +30,6 @@ func (s service) CreateRecord(ctx context.Context, model domain.Model) error {
 	return nil
 }
 
-func (s service) GetRecord(ctx context.Context, userID domain.UserID, videoID domain.VideoID) (time.Duration, error) {
+func (s service) GetLatestRecord(ctx context.Context, userID domain.UserID, videoID domain.VideoID) (time.Duration, error) {
 	return time.Duration(1), nil
 }

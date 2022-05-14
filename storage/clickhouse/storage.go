@@ -15,7 +15,7 @@ type RecordStorage struct {
 
 type Storage interface {
 	CreateRecord(context.Context, domain.Model) error
-	GetRecord(context.Context, domain.UserID, domain.VideoID) (time.Duration, error)
+	GetLatestRecord(context.Context, domain.UserID, domain.VideoID) (time.Duration, error)
 }
 
 func NewRecordStorage(db sql.DB) Storage {
@@ -26,6 +26,6 @@ func (r *RecordStorage) CreateRecord(ctx context.Context, model domain.Model) er
 	return nil
 }
 
-func (r *RecordStorage) GetRecord(ctx context.Context, userID domain.UserID, videoID domain.VideoID) (time.Duration, error) {
+func (r *RecordStorage) GetLatestRecord(ctx context.Context, userID domain.UserID, videoID domain.VideoID) (time.Duration, error) {
 	return time.Duration(1), nil
 }

@@ -13,7 +13,7 @@ type Controller interface {
 		ctx context.Context,
 		request *gen.CreateRecordRequest,
 	) (*gen.CreateRecordResponse, error)
-	GetRecord(
+	GetLatestRecord(
 		ctx context.Context,
 		request *gen.GetLatestRecordRequest,
 	) (*gen.GetLatestRecordResponse, error)
@@ -54,16 +54,16 @@ func (c controller) CreateRecord(
 	err = c.recordService.CreateRecord(ctx, newRecord)
 
 	var state string
-	switch err {
-	case nil:
+	if err != nil {
 		state = "ok"
-	default:
+	} else {
 		state = "error during add data to db"
 	}
+
 	return &gen.CreateRecordResponse{State: state}, nil
 }
 
-func (c controller) GetRecord(
+func (c controller) GetLatestRecord(
 	ctx context.Context,
 	request *gen.GetLatestRecordRequest,
 ) (*gen.GetLatestRecordResponse, error) {
@@ -77,7 +77,7 @@ func (c controller) GetRecord(
 		return nil, err
 	}
 
-	latestRecord, err := c.recordService.GetRecord(ctx, userID, videoID)
+	latestRecord, err := c.recordService.GetLatestRecord(ctx, userID, videoID)
 	if err != nil {
 		return nil, err
 	}
