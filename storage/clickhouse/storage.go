@@ -1,0 +1,34 @@
+package clickhouse
+
+import (
+	"KION/domain"
+	"context"
+	"database/sql"
+	"fmt"
+	"time"
+)
+
+// Никита, тебе нужно будет клик как-то тут инициализировать, потому что я хз работает ли клик с этой либой для sql
+
+type RecordStorage struct {
+	db sql.DB
+}
+
+type Storage interface {
+	CreateRecord(context.Context, domain.Model) error
+	GetLatestRecord(context.Context, domain.UserID, domain.VideoID) (time.Duration, error)
+}
+
+func NewRecordStorage(db sql.DB) Storage {
+	return &RecordStorage{db: db}
+}
+
+func (r *RecordStorage) CreateRecord(ctx context.Context, model domain.Model) error {
+	fmt.Println("Storage CreateRecord")
+	return nil
+}
+
+func (r *RecordStorage) GetLatestRecord(ctx context.Context, userID domain.UserID, videoID domain.VideoID) (time.Duration, error) {
+	fmt.Println("Storage GetLatestRecord")
+	return time.Duration(1), nil
+}

@@ -5,19 +5,44 @@ import (
 	"time"
 )
 
-type Model struct {
-	videoID   uuid.UUID
-	userID    uuid.UUID
-	videoTime time.Duration
-	eventType Event
-	eventTime time.Time
+type UserID uuid.UUID
+
+func (u UserID) String() string {
+	return uuid.UUID(u).String()
 }
 
-func (m Model) GetVideoID() uuid.UUID {
+type VideoID uuid.UUID
+
+func (v VideoID) String() string {
+	return uuid.UUID(v).String()
+}
+
+type Model struct {
+	videoID   VideoID
+	userID    UserID
+	videoTime time.Duration
+	eventType Event
+}
+
+func NewModel(
+	videoID VideoID,
+	userID UserID,
+	videoTime time.Duration,
+	eventType Event,
+) Model {
+	return Model{
+		videoID:   videoID,
+		userID:    userID,
+		videoTime: videoTime,
+		eventType: eventType,
+	}
+}
+
+func (m Model) GetVideoID() VideoID {
 	return m.videoID
 }
 
-func (m Model) GetUserID() uuid.UUID {
+func (m Model) GetUserID() UserID {
 	return m.userID
 }
 
@@ -26,8 +51,4 @@ func (m Model) GetVideoTime() time.Duration {
 }
 func (m Model) GetEvent() Event {
 	return m.eventType
-}
-
-func (m Model) GetEventTime() time.Time {
-	return m.eventTime
 }
