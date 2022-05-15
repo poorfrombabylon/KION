@@ -1,34 +1,48 @@
 package main
 
 import (
+	"KION/api"
+	"KION/service/record"
+	"KION/specs/gen"
+	"KION/storage/clickhouse"
 	"context"
+	"database/sql"
 	"fmt"
-	"golang.org/x/sync/errgroup"
 	"google.golang.org/grpc"
 	"log"
 	"net"
 )
 
+var db sql.DB
+
+var cont = api.NewRecordController(record.NewRecordService(clickhouse.NewRecordStorage(db)))
+
+type goServer struct {
+	gen.UnimplementedKionServiceServer
+}
+
+func (s *goServer) CreateRecord(ctx context.Context, req *gen.CreateRecordRequest) (*gen.CreateRecordResponse, error) {
+	return cont.CreateRecord(ctx, req)
+}
+
+func (s *goServer) GetLatestRecord(ctx context.Context, req *gen.GetLatestRecordRequest) (*gen.GetLatestRecordResponse, error) {
+	return cont.GetLatestRecord(ctx, req)
+}
+
 func main() {
-	ctx := context.Background()
-	server := grpc.NewServer()
-	listener, err := net.Listen("tcp", ":8080")
+	conn, err := net.Listen("tcp", "localhost:8080")
 	if err != nil {
-		log.Fatalf("failed to listen: %v", err)
+		log.Fatal("tcp connection error:", err.Error())
 	}
 
-	if err := server.Serve(listener); err != nil {
-		log.Fatal("Unable to start server:", err)
-	} else {
-		fmt.Println("погнали")
+	grpcServer := grpc.NewServer()
+
+	server := goServer{}
+
+	gen.RegisterKionServiceServer(grpcServer, &server)
+
+	fmt.Println("starting server at localhost:8080")
+	if err := grpcServer.Serve(conn); err != nil {
+		log.Fatal(err)
 	}
-
-	group, ctx := errgroup.WithContext(ctx)
-
-	group.Go(func() error {
-		<-ctx.Done()
-		server.GracefulStop()
-
-		return nil
-	})
 }
