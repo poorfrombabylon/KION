@@ -10,15 +10,14 @@ import (
 	ch "github.com/ClickHouse/clickhouse-go/v2"
 )
 
-// Никита, тебе нужно будет клик как-то тут инициализировать, потому что я хз работает ли клик с этой либой для sql
-
 const createTableQuery = `
 	CREATE TABLE IF NOT EXISTS KION
 	(
+		RecordId Int NOT NULL AUTO_INCREMENT,
 		VideoId String,
 		UserId String,
 		EventType String,
-		EventTime DateTime
+		EventTime Int
 	)
 
 	ENGINE = ReplacingMergeTree()
@@ -38,7 +37,7 @@ func NewRecordStorage() Storage {
 	var (
 		ctx     = context.Background()
 		db, err = ch.Open(&ch.Options{
-			Addr: []string{"212.23.220.55:8123"},
+			Addr: []string{"localhost:9000"},
 			Auth: ch.Auth{
 				Database: "default",
 				Username: "default",
