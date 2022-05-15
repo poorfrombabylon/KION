@@ -38,7 +38,7 @@ func NewRecordStorage() Storage {
 	var (
 		ctx     = context.Background()
 		db, err = ch.Open(&ch.Options{
-			Addr: []string{"localhost:9000"},
+			Addr: []string{"212.23.220.55:8123"},
 			Auth: ch.Auth{
 				Database: "default",
 				Username: "default",
@@ -65,6 +65,18 @@ func NewRecordStorage() Storage {
 
 func (r *RecordStorage) CreateRecord(ctx context.Context, model domain.Model) error {
 	fmt.Println("Storage CreateRecord")
+
+	query := fmt.Sprintf(`
+		INSERT INTO KION (VideoId, UserId, EventType, EventTime)
+		VALUES (%s, %s, %s, %s);
+	`, model.GetVideoID().String(), model.GetUserID().String(), model.GetEvent().String(), model.GetVideoTime())
+
+	err := r.db.Exec(ctx, query)
+	if err != nil {
+		fmt.Errorf(err.Error())
+		return err
+	}
+
 	return nil
 }
 

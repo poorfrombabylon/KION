@@ -2,6 +2,10 @@ package domain
 
 type Event string
 
+func (e Event) String() string {
+	return e.String()
+}
+
 const (
 	StopVideoEvent    Event = "STOP_VIDEO_EVENT"
 	ForwardVideoEvent Event = "FORWARD_VIDEO_EVENT"

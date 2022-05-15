@@ -8,14 +8,15 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
-	"google.golang.org/grpc"
 	"log"
 	"net"
+
+	"google.golang.org/grpc"
 )
 
 var db sql.DB
 
-var cont = api.NewRecordController(record.NewRecordService(clickhouse.NewRecordStorage(db)))
+var cont = api.NewRecordController(record.NewRecordService(clickhouse.NewRecordStorage()))
 
 type goServer struct {
 	gen.UnimplementedKionServiceServer
