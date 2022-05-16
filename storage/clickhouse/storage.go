@@ -13,10 +13,11 @@ import (
 const createTableQuery = `
 	CREATE TABLE IF NOT EXISTS KION
 	(
-		VideoId String,
-		UserId String,
+		VideoId UUID,
+		UserId UUID,
 		EventType String,
-		EventTime Int
+		EventDuration Int,
+		EventTime DateTime('Europe/London')
 	)
 
 	ENGINE = ReplacingMergeTree()
@@ -65,9 +66,11 @@ func (r *RecordStorage) CreateRecord(ctx context.Context, model domain.Model) er
 	fmt.Println("Storage CreateRecord")
 
 	query := fmt.Sprintf(`
-		INSERT INTO KION (VideoId, UserId, EventType, EventTime)
-		VALUES ('%s', '%s', '%s', %v);
-	`, model.GetVideoID().String(), model.GetUserID().String(), model.GetEvent(), int(model.GetVideoTime().Seconds()))
+		INSERT INTO KION (VideoId, UserId, EventType, EventDuration, EventTime)
+		VALUES ('%s', '%s', '%s', %v, '%v');
+	`, model.GetVideoID().String(), model.GetUserID().String(), model.GetEvent(), int(model.GetVideoTime().Seconds()), model.GetCreatedAt().Format("2006-04-02 15:04:05"))
+
+	fmt.Println(query)
 
 	err := r.db.Exec(ctx, query)
 	if err != nil {

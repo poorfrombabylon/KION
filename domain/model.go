@@ -23,6 +23,7 @@ type Model struct {
 	userID    UserID
 	videoTime time.Duration
 	eventType string
+	createdAt time.Time
 }
 
 func NewModel(
@@ -36,6 +37,7 @@ func NewModel(
 		userID:    userID,
 		videoTime: videoTime,
 		eventType: eventType,
+		createdAt: time.Now().In(time.UTC),
 	}
 }
 
@@ -52,4 +54,8 @@ func (m Model) GetVideoTime() time.Duration {
 }
 func (m Model) GetEvent() string {
 	return m.eventType
+}
+
+func (m Model) GetCreatedAt() time.Time {
+	return m.createdAt
 }
