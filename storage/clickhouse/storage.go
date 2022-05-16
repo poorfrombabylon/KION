@@ -67,10 +67,8 @@ func (r *RecordStorage) CreateRecord(ctx context.Context, model domain.Model) er
 
 	query := fmt.Sprintf(`
 		INSERT INTO KION (VideoId, UserId, EventType, EventDuration, EventTime)
-		VALUES ('%s', '%s', '%s', %v, '%v');
-	`, model.GetVideoID().String(), model.GetUserID().String(), model.GetEvent(), int(model.GetVideoTime().Seconds()), model.GetCreatedAt().Format("2006-04-02 15:04:05"))
-
-	fmt.Println(query)
+		VALUES ('%s', '%s', '%s', %v, %v);
+	`, model.GetVideoID().String(), model.GetUserID().String(), model.GetEvent(), int(model.GetVideoTime().Seconds()), model.GetCreatedAt().Unix())
 
 	err := r.db.Exec(ctx, query)
 	if err != nil {
@@ -83,5 +81,21 @@ func (r *RecordStorage) CreateRecord(ctx context.Context, model domain.Model) er
 
 func (r *RecordStorage) GetLatestRecord(ctx context.Context, userID domain.UserID, videoID domain.VideoID) (time.Duration, error) {
 	fmt.Println("Storage GetLatestRecord")
-	return time.Duration(1), nil
+
+	query := fmt.Sprintf(`
+		SELECT EventDuration FROM KION
+		WHERE (UserId = '%s' AND VideoId = '%s')
+		ORDER BY EventTime DESC
+		LIMIT 1
+	`, userID.String(), videoID.String())
+
+	var duration int32
+	err := r.db.QueryRow(ctx, query).Scan(&duration)
+
+	if err != nil {
+		fmt.Println(err.Error())
+		return time.Duration(1), err
+	}
+
+	return time.Duration(duration), nil
 }
