@@ -35,6 +35,6 @@ func (s service) CreateRecord(ctx context.Context, model domain.Model) error {
 
 func (s service) GetLatestRecord(ctx context.Context, userID domain.UserID, videoID domain.VideoID) (time.Duration, error) {
 	fmt.Println("Service GetLatestRecord")
-	s.recordStorage.GetLatestRecord(ctx, userID, videoID)
-	return time.Duration(1), nil
+	duration, err := s.recordStorage.GetLatestRecord(ctx, userID, videoID)
+	return duration, err
 }
