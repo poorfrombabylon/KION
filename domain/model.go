@@ -1,8 +1,9 @@
 package domain
 
 import (
-	"github.com/google/uuid"
 	"time"
+
+	"github.com/google/uuid"
 )
 
 type UserID uuid.UUID
@@ -21,14 +22,14 @@ type Model struct {
 	videoID   VideoID
 	userID    UserID
 	videoTime time.Duration
-	eventType Event
+	eventType string
 }
 
 func NewModel(
 	videoID VideoID,
 	userID UserID,
 	videoTime time.Duration,
-	eventType Event,
+	eventType string,
 ) Model {
 	return Model{
 		videoID:   videoID,
@@ -49,6 +50,6 @@ func (m Model) GetUserID() UserID {
 func (m Model) GetVideoTime() time.Duration {
 	return m.videoTime
 }
-func (m Model) GetEvent() Event {
+func (m Model) GetEvent() string {
 	return m.eventType
 }
