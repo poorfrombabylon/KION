@@ -29,10 +29,12 @@ func NewRecordService(recordStorage RecordStorage) RecordService {
 
 func (s service) CreateRecord(ctx context.Context, model domain.Model) error {
 	fmt.Println("Service CreateRecord")
+	s.recordStorage.CreateRecord(ctx, model)
 	return nil
 }
 
 func (s service) GetLatestRecord(ctx context.Context, userID domain.UserID, videoID domain.VideoID) (time.Duration, error) {
 	fmt.Println("Service GetLatestRecord")
+	s.recordStorage.GetLatestRecord(ctx, userID, videoID)
 	return time.Duration(1), nil
 }

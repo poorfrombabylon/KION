@@ -6,6 +6,7 @@ import (
 	"KION/specs/gen"
 	"context"
 	"fmt"
+
 	"google.golang.org/protobuf/types/known/durationpb"
 )
 
@@ -45,7 +46,7 @@ func (c controller) CreateRecord(
 	}
 
 	videoTime := request.GetTime().AsDuration()
-	eventType := convertEvent(request.GetEventType())
+	eventType := request.GetEventType()
 
 	newRecord := domain.NewModel(
 		videoID,
@@ -57,7 +58,7 @@ func (c controller) CreateRecord(
 	err = c.recordService.CreateRecord(ctx, newRecord)
 
 	var state string
-	if err != nil {
+	if err == nil {
 		state = "ok"
 	} else {
 		state = "error during add data to db"

@@ -13,7 +13,6 @@ import (
 const createTableQuery = `
 	CREATE TABLE IF NOT EXISTS KION
 	(
-		RecordId Int NOT NULL AUTO_INCREMENT,
 		VideoId String,
 		UserId String,
 		EventType String,
@@ -37,11 +36,11 @@ func NewRecordStorage() Storage {
 	var (
 		ctx     = context.Background()
 		db, err = ch.Open(&ch.Options{
-			Addr: []string{"localhost:9000"},
+			Addr: []string{"212.23.220.55:9000"},
 			Auth: ch.Auth{
 				Database: "default",
-				Username: "default",
-				Password: "",
+				Username: "clickhouse_operator",
+				Password: "clickhouse_operator_password",
 			},
 			DialTimeout:     time.Second,
 			MaxOpenConns:    10,
@@ -67,12 +66,12 @@ func (r *RecordStorage) CreateRecord(ctx context.Context, model domain.Model) er
 
 	query := fmt.Sprintf(`
 		INSERT INTO KION (VideoId, UserId, EventType, EventTime)
-		VALUES (%s, %s, %s, %s);
-	`, model.GetVideoID().String(), model.GetUserID().String(), model.GetEvent().String(), model.GetVideoTime())
+		VALUES ('%s', '%s', '%s', %v);
+	`, model.GetVideoID().String(), model.GetUserID().String(), model.GetEvent(), int(model.GetVideoTime().Seconds()))
 
 	err := r.db.Exec(ctx, query)
 	if err != nil {
-		fmt.Errorf(err.Error())
+		fmt.Println(err.Error())
 		return err
 	}
 

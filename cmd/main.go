@@ -35,6 +35,7 @@ func main() {
 	if err != nil {
 		log.Fatal("tcp connection error:", err.Error())
 	}
+	clickhouse.NewRecordStorage()
 
 	grpcServer := grpc.NewServer()
 
