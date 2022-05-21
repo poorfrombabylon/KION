@@ -8,10 +8,12 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"golang.org/x/sync/errgroup"
+	"google.golang.org/grpc"
 	"log"
 	"net"
-
-	"google.golang.org/grpc"
+	"net/http"
 )
 
 var db sql.DB
@@ -31,11 +33,21 @@ func (s *goServer) GetLatestRecord(ctx context.Context, req *gen.GetLatestRecord
 }
 
 func main() {
-	conn, err := net.Listen("tcp", "localhost:8080")
+	ctx := context.Background()
+
+	fmt.Println("starting server at localhost:8888")
+	go initHttpServer()
+
+	fmt.Println("starting server at localhost:8082")
+	initGrpcServer(ctx)
+
+}
+
+func initGrpcServer(ctx context.Context) error {
+	conn, err := net.Listen("tcp", "localhost:8082")
 	if err != nil {
 		log.Fatal("tcp connection error:", err.Error())
 	}
-	clickhouse.NewRecordStorage()
 
 	grpcServer := grpc.NewServer()
 
@@ -43,8 +55,26 @@ func main() {
 
 	gen.RegisterKionServiceServer(grpcServer, &server)
 
-	fmt.Println("starting server at localhost:8080")
-	if err := grpcServer.Serve(conn); err != nil {
-		log.Fatal(err)
-	}
+	group, ctx := errgroup.WithContext(ctx)
+	group.Go(func() error {
+		if err := grpcServer.Serve(conn); err != nil {
+			return fmt.Errorf("failed to serve gRPC server: %w", err)
+		}
+
+		return nil
+	})
+
+	group.Go(func() error {
+		<-ctx.Done()
+		grpcServer.GracefulStop()
+
+		return nil
+	})
+
+	return group.Wait()
+}
+
+func initHttpServer() {
+	http.Handle("/metrics", promhttp.Handler())
+	http.ListenAndServe(":8888", nil)
 }
