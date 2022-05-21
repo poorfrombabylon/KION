@@ -1,0 +1,215 @@
+2022-05-18 19:42:31,229 [INFO] root consoleworker.py:434	Log file created
+2022-05-18 19:42:31,240 [INFO] root consoleworker.py:438	Logging handler <logging.FileHandler object at 0x40192a2c10> added
+2022-05-18 19:42:31,241 [INFO] root consoleworker.py:438	Logging handler <logging.StreamHandler object at 0x401926a850> added
+2022-05-18 19:42:31,242 [INFO] root consoleworker.py:438	Logging handler <logging.StreamHandler object at 0x401928ea50> added
+2022-05-18 19:42:31,245 [INFO] root consoleworker.py:373	Created a folder for the test. /var/loadtest/logs/2022-05-18_19-42-31.038090
+2022-05-18 19:42:31,246 [INFO] yandextank.core.tankcore tankcore.py:237	Configuring plugins...
+2022-05-18 19:42:31,248 [INFO] yandextank.core.tankcore tankcore.py:190	Loading plugins...
+2022-05-18 19:42:31,251 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin rcheck from yandextank.plugins.ResourceCheck
+2022-05-18 19:42:31,256 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin json_report from yandextank.plugins.JsonReport
+2022-05-18 19:42:31,297 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin overload from yandextank.plugins.DataUploader
+2022-05-18 19:42:31,300 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin rcassert from yandextank.plugins.RCAssert
+2022-05-18 19:42:31,303 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin pandora from yandextank.plugins.Pandora
+2022-05-18 19:42:31,304 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin console from yandextank.plugins.Console
+2022-05-18 19:42:31,307 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin shellexec from yandextank.plugins.ShellExec
+2022-05-18 19:42:31,309 [DEBUG] yandextank.core.tankcore tankcore.py:192	Loading plugin autostop from yandextank.plugins.Autostop
+2022-05-18 19:42:31,310 [DEBUG] yandextank.core.tankcore tankcore.py:212	Plugin instances: {'plugin_pandora': <yandextank.plugins.Pandora.plugin.Plugin object at 0x4019375890>, 'plugin_json_report': <yandextank.plugins.JsonReport.plugin.Plugin object at 0x401937e590>, 'plugin_autostop': <yandextank.plugins.Autostop.plugin.Plugin object at 0x4019375cd0>, 'plugin_shellexec': <yandextank.plugins.ShellExec.plugin.Plugin object at 0x40193753d0>, 'plugin_console': <yandextank.plugins.Console.plugin.Plugin object at 0x4019375950>, 'plugin_rcassert': <yandextank.plugins.RCAssert.plugin.Plugin object at 0x4019375590>, 'plugin_rcheck': <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x4019366e90>, 'plugin_overload': <yandextank.plugins.DataUploader.plugin.Plugin object at 0x401937eb50>}
+2022-05-18 19:42:31,313 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.Pandora.plugin.Plugin object at 0x4019375890>
+2022-05-18 19:42:31,314 [INFO] yandextank.plugins.Pandora.plugin plugin.py:68	Found config_file option configuration
+2022-05-18 19:42:31,343 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_config_Rs2mYJ.yaml
+2022-05-18 19:42:31,356 [DEBUG] yandextank.plugins.Pandora.plugin plugin.py:74	Config after parsing for patching: {'pools': [{'rps': {'duration': '60s', 'type': 'line', 'from': 1, 'to': 200}, 'result': {'destination': './phout.log', 'type': 'phout'}, 'startup': {'type': 'once', 'times': 10}, 'gun': {'type': 'My_custom_gun_name', 'target': '0.0.0.0:8080'}, 'ammo': {'source': {'path': './json.ammo', 'type': 'file'}, 'type': 'custom_provider'}, 'id': 'HTTP pool'}]}
+2022-05-18 19:42:31,359 [INFO] yandextank.plugins.Pandora.plugin plugin.py:153	Found report file in pandora config: ./phout.log
+2022-05-18 19:42:31,363 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): ./phout.log
+2022-05-18 19:42:31,364 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.JsonReport.plugin.Plugin object at 0x401937e590>
+2022-05-18 19:42:31,366 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.common.interfaces.GeneratorPlugin'>
+2022-05-18 19:42:31,376 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.Autostop.plugin.Plugin object at 0x4019375cd0>
+2022-05-18 19:42:31,379 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.ShellExec.plugin.Plugin object at 0x40193753d0>
+2022-05-18 19:42:31,381 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.Console.plugin.Plugin object at 0x4019375950>
+2022-05-18 19:42:31,384 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.RCAssert.plugin.Plugin object at 0x4019375590>
+2022-05-18 19:42:31,386 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x4019366e90>
+2022-05-18 19:42:31,390 [DEBUG] yandextank.core.tankcore tankcore.py:244	Configuring <yandextank.plugins.DataUploader.plugin.Plugin object at 0x401937eb50>
+2022-05-18 19:42:31,392 [INFO] yandextank.core.tankcore tankcore.py:249	Preparing test...
+2022-05-18 19:42:31,393 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.Pandora.plugin.Plugin object at 0x4019375890>
+2022-05-18 19:42:31,395 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2022-05-18 19:42:31,396 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.JsonReport.plugin.Plugin object at 0x401937e590>
+2022-05-18 19:42:31,396 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.Autostop.plugin.Plugin object at 0x4019375cd0>
+2022-05-18 19:42:31,397 [DEBUG] yandextank.common.interfaces plugin.py:74	Criterion string: http(5xx,10%,5s)
+2022-05-18 19:42:31,399 [DEBUG] yandextank.common.interfaces plugin.py:78	Criterion objects: {'http(5xx,10%,5s)': <yandextank.plugins.Autostop.criterions.HTTPCodesCriterion object at 0x4019375f10>}
+2022-05-18 19:42:31,400 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2022-05-18 19:42:31,401 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.ShellExec.plugin.Plugin object at 0x40193753d0>
+2022-05-18 19:42:31,403 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.Console.plugin.Plugin object at 0x4019375950>
+2022-05-18 19:42:31,405 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.RCAssert.plugin.Plugin object at 0x4019375590>
+2022-05-18 19:42:31,406 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x4019366e90>
+2022-05-18 19:42:31,406 [INFO] yandextank.common.interfaces plugin.py:39	Checking tank resources...
+2022-05-18 19:42:31,408 [DEBUG] netort.process process.py:23	Starting: sh -c "df --no-sync -m -P -l -x fuse -x tmpfs -x devtmpfs -x davfs -x nfs /var/loadtest/logs | tail -n 1 | awk '{print \$4}' "
+2022-05-18 19:42:32,003 [DEBUG] netort.process process.py:46	Process output:
+12900
+
+2022-05-18 19:42:32,006 [DEBUG] netort.process process.py:48	Process exit code: 0
+2022-05-18 19:42:32,008 [DEBUG] root plugin.py:58	Result: (0, '12900\n', '')
+2022-05-18 19:42:32,011 [DEBUG] yandextank.common.interfaces plugin.py:64	Disk free space: 12900/2048
+2022-05-18 19:42:32,016 [DEBUG] yandextank.common.interfaces plugin.py:75	Memory free: 3091/512
+2022-05-18 19:42:32,018 [DEBUG] yandextank.core.tankcore tankcore.py:253	Preparing <yandextank.plugins.DataUploader.plugin.Plugin object at 0x401937eb50>
+2022-05-18 19:42:32,020 [WARNING] yandextank.plugins.DataUploader.plugin plugin.py:234	Failed to get info about ammo path
+2022-05-18 19:42:32,025 [INFO] root plugin.py:523	Using OVERLOAD backend
+2022-05-18 19:42:32,031 [DEBUG] yandextank.plugins.DataUploader.plugin plugin.py:618	Trying to read token from token.txt
+2022-05-18 19:42:32,043 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:624	Read authentication token from token.txt, token length is 32 bytes
+2022-05-18 19:42:32,115 [INFO] yandextank.plugins.DataUploader.client client.py:59	Proxy not set
+2022-05-18 19:42:32,118 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:647	Detected target: 0.0.0.0:8080
+2022-05-18 19:42:32,148 [DEBUG] yandextank.plugins.DataUploader.client client.py:336	Job create request: {'person': 'root', 'host': '0.0.0.0:8080', 'task': '', 'tank': '4d28ee06a118', 'notify': [], 'loadscheme': [], 'detailed_time': None, 'port': '8080'}
+2022-05-18 19:42:32,170 [DEBUG] urllib3.connectionpool connectionpool.py:813	Starting new HTTPS connection (1): overload.yandex.net:443
+2022-05-18 19:42:32,631 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/create.json?api_token=4f2a42fb997146a394c06ccf2768f953 HTTP/1.1" 200 None
+2022-05-18 19:42:32,642 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:789	Job created: 522906
+2022-05-18 19:42:32,656 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinitial config
+2022-05-18 19:42:32,804 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/522906/configinitial.txt?api_token=4f2a42fb997146a394c06ccf2768f953 HTTP/1.1" 200 16
+2022-05-18 19:42:32,824 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:485	Locking targets: ['0.0.0.0:8080']
+2022-05-18 19:42:32,837 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:487	Locked targets: ['0.0.0.0:8080']
+2022-05-18 19:42:32,857 [DEBUG] yandextank.common.interfaces interfaces.py:101	Publishing status: Plugin/job_no: 522906
+2022-05-18 19:42:33,074 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/522906/edit.json?api_token=4f2a42fb997146a394c06ccf2768f953 HTTP/1.1" 200 19
+2022-05-18 19:42:33,081 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Console.plugin.Plugin'>
+2022-05-18 19:42:33,088 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinitial config
+2022-05-18 19:42:33,185 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/522906/configinitial.txt?api_token=4f2a42fb997146a394c06ccf2768f953 HTTP/1.1" 200 16
+2022-05-18 19:42:33,189 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinfo config
+2022-05-18 19:42:33,593 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/522906/configinfo.txt?api_token=4f2a42fb997146a394c06ccf2768f953 HTTP/1.1" 200 16
+2022-05-18 19:42:33,609 [INFO] yandextank.core.tankcore tankcore.py:259	Starting test...
+2022-05-18 19:42:33,647 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:63	using verbose histogram
+2022-05-18 19:42:33,719 [DEBUG] yandextank.core.tankcore tankcore.py:263	Starting <yandextank.plugins.Pandora.plugin.Plugin object at 0x4019375890>
+2022-05-18 19:42:33,725 [INFO] yandextank.plugins.Pandora.plugin plugin.py:183	Starting: ['pandora/main', '-expvar', '/var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_config_Rs2mYJ.yaml']
+2022-05-18 19:42:33,731 [DEBUG] urllib3.connectionpool connectionpool.py:205	Starting new HTTP connection (1): localhost:1234
+2022-05-18 19:42:33,760 [DEBUG] yandextank.plugins.Pandora.reader reader.py:33	Pandora expvar http interface is unavailable
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Pandora/reader.py", line 24, in run
+    pandora_stat = requests.get("http://localhost:1234/debug/vars", timeout=0.9).json()
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /debug/vars (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x40195bdd50>: Failed to establish a new connection: [Errno 111] Connection refused',))
+2022-05-18 19:42:33,763 [DEBUG] yandextank.core.tankcore tankcore.py:446	Adding artifact file to collect (keep=False): /var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_MfJveu.log
+2022-05-18 19:42:34,188 [DEBUG] urllib3.connectionpool connectionpool.py:205	Starting new HTTP connection (1): localhost:1234
+2022-05-18 19:42:34,196 [DEBUG] yandextank.plugins.Pandora.reader reader.py:33	Pandora expvar http interface is unavailable
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Pandora/reader.py", line 24, in run
+    pandora_stat = requests.get("http://localhost:1234/debug/vars", timeout=0.9).json()
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /debug/vars (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x4022375790>: Failed to establish a new connection: [Errno 111] Connection refused',))
+2022-05-18 19:42:34,284 [DEBUG] yandextank.plugins.Pandora.plugin plugin.py:196	Unable to start Pandora binary. Args: ['pandora/main', '-expvar', '/var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_config_Rs2mYJ.yaml']
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Pandora/plugin.py", line 193, in start_test
+    close_fds=True)
+  File "/usr/lib/python2.7/subprocess.py", line 711, in __init__
+    errread, errwrite)
+  File "/usr/lib/python2.7/subprocess.py", line 1343, in _execute_child
+    raise child_exception
+OSError: [Errno 8] Exec format error
+2022-05-18 19:42:34,287 [ERROR] root consoleworker.py:296	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['pandora/main', '-expvar', '/var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_config_Rs2mYJ.yaml']
+<traceback object at 0x403de9cf38>
+2022-05-18 19:42:34,289 [INFO] yandextank.core.tankcore tankcore.py:301	Finishing test...
+2022-05-18 19:42:34,290 [INFO] yandextank.core.tankcore tankcore.py:303	Stopping load generator and aggregator
+2022-05-18 19:42:34,294 [DEBUG] yandextank.plugins.Pandora.plugin plugin.py:225	Seems subprocess finished OK
+2022-05-18 19:42:34,296 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:123	Closing stats reader
+2022-05-18 19:42:34,406 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:126	Waiting for gun drain to finish
+2022-05-18 19:42:34,738 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:128	Waiting for stats drain to finish
+2022-05-18 19:42:34,743 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:130	Collecting remaining data
+2022-05-18 19:42:34,751 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:87	Data timestamps: []
+2022-05-18 19:42:34,754 [DEBUG] yandextank.aggregator.tank_aggregator tank_aggregator.py:88	Stats timestamps: []
+2022-05-18 19:42:34,757 [DEBUG] yandextank.core.tankcore tankcore.py:305	RC after: 1
+2022-05-18 19:42:34,759 [INFO] yandextank.core.tankcore tankcore.py:307	Stopping monitoring
+2022-05-18 19:42:34,763 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.JsonReport.plugin.Plugin object at 0x401937e590>
+2022-05-18 19:42:34,766 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 1
+2022-05-18 19:42:34,768 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 1
+2022-05-18 19:42:34,771 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.Autostop.plugin.Plugin object at 0x4019375cd0>
+2022-05-18 19:42:34,775 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 1
+2022-05-18 19:42:34,778 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 1
+2022-05-18 19:42:34,782 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.ShellExec.plugin.Plugin object at 0x40193753d0>
+2022-05-18 19:42:34,784 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 1
+2022-05-18 19:42:34,786 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 1
+2022-05-18 19:42:34,789 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.Console.plugin.Plugin object at 0x4019375950>
+2022-05-18 19:42:34,792 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 1
+2022-05-18 19:42:34,795 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 1
+2022-05-18 19:42:34,796 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.RCAssert.plugin.Plugin object at 0x4019375590>
+2022-05-18 19:42:34,798 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 1
+2022-05-18 19:42:34,799 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 1
+2022-05-18 19:42:34,800 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x4019366e90>
+2022-05-18 19:42:34,801 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 1
+2022-05-18 19:42:34,804 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 1
+2022-05-18 19:42:34,805 [DEBUG] yandextank.core.tankcore tankcore.py:315	Finalize <yandextank.plugins.DataUploader.plugin.Plugin object at 0x401937eb50>
+2022-05-18 19:42:34,806 [DEBUG] yandextank.core.tankcore tankcore.py:317	RC before: 1
+2022-05-18 19:42:34,807 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinitial config
+2022-05-18 19:42:34,917 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/522906/configinitial.txt?api_token=4f2a42fb997146a394c06ccf2768f953 HTTP/1.1" 200 16
+2022-05-18 19:42:34,924 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinfo config
+2022-05-18 19:42:35,043 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/522906/configinfo.txt?api_token=4f2a42fb997146a394c06ccf2768f953 HTTP/1.1" 200 16
+2022-05-18 19:42:35,054 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:478	Unlocking targets: ['0.0.0.0:8080']
+2022-05-18 19:42:35,058 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:480	0.0.0.0:8080
+2022-05-18 19:42:35,061 [DEBUG] yandextank.core.tankcore tankcore.py:319	RC after: 1
+2022-05-18 19:42:35,065 [INFO] yandextank.core.tankcore tankcore.py:330	Post-processing test...
+2022-05-18 19:42:35,071 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.Pandora.plugin.Plugin object at 0x4019375890>
+2022-05-18 19:42:35,074 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 1
+2022-05-18 19:42:35,077 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 1
+2022-05-18 19:42:35,080 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.JsonReport.plugin.Plugin object at 0x401937e590>
+2022-05-18 19:42:35,082 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 1
+2022-05-18 19:42:35,086 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 1
+2022-05-18 19:42:35,091 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.Autostop.plugin.Plugin object at 0x4019375cd0>
+2022-05-18 19:42:35,093 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 1
+2022-05-18 19:42:35,098 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 1
+2022-05-18 19:42:35,100 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.ShellExec.plugin.Plugin object at 0x40193753d0>
+2022-05-18 19:42:35,104 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 1
+2022-05-18 19:42:35,106 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 1
+2022-05-18 19:42:35,108 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.Console.plugin.Plugin object at 0x4019375950>
+2022-05-18 19:42:35,110 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 1
+2022-05-18 19:42:35,112 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 1
+2022-05-18 19:42:35,113 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.RCAssert.plugin.Plugin object at 0x4019375590>
+2022-05-18 19:42:35,114 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 1
+2022-05-18 19:42:35,116 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 1
+2022-05-18 19:42:35,117 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.ResourceCheck.plugin.Plugin object at 0x4019366e90>
+2022-05-18 19:42:35,119 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 1
+2022-05-18 19:42:35,120 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 1
+2022-05-18 19:42:35,121 [DEBUG] yandextank.core.tankcore tankcore.py:333	Post-process <yandextank.plugins.DataUploader.plugin.Plugin object at 0x401937eb50>
+2022-05-18 19:42:35,123 [DEBUG] yandextank.core.tankcore tankcore.py:335	RC before: 1
+2022-05-18 19:42:35,126 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:350	Waiting for sender threads to join.
+2022-05-18 19:42:35,128 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:357	Web link: None
+2022-05-18 19:42:35,130 [DEBUG] yandextank.core.tankcore tankcore.py:391	Searching for plugin: <class 'yandextank.plugins.Autostop.plugin.Plugin'>
+2022-05-18 19:42:35,132 [DEBUG] yandextank.plugins.DataUploader.plugin plugin.py:376	No autostop cause detected
+2022-05-18 19:42:35,134 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinitial config
+2022-05-18 19:42:35,301 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/522906/configinitial.txt?api_token=4f2a42fb997146a394c06ccf2768f953 HTTP/1.1" 200 16
+2022-05-18 19:42:35,309 [DEBUG] yandextank.plugins.DataUploader.client client.py:642	Sending configinfo config
+2022-05-18 19:42:35,416 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "POST /api/job/522906/configinfo.txt?api_token=4f2a42fb997146a394c06ccf2768f953 HTTP/1.1" 200 16
+2022-05-18 19:42:35,428 [DEBUG] yandextank.core.tankcore tankcore.py:337	RC after: 1
+2022-05-18 19:42:35,432 [INFO] root consoleworker.py:269	Trying to clean up
+2022-05-18 19:42:35,437 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_pandora
+2022-05-18 19:42:35,441 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_json_report
+2022-05-18 19:42:35,444 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_autostop
+2022-05-18 19:42:35,455 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_shellexec
+2022-05-18 19:42:35,458 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_console
+2022-05-18 19:42:35,461 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_rcassert
+2022-05-18 19:42:35,465 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_rcheck
+2022-05-18 19:42:35,468 [INFO] yandextank.core.tankcore tankcore.py:526	Cleaning up plugin plugin_overload
+2022-05-18 19:42:35,636 [DEBUG] urllib3.connectionpool connectionpool.py:393	https://overload.yandex.net:443 "GET /api/job/522906/close.json?exitcode=1&api_token=4f2a42fb997146a394c06ccf2768f953 HTTP/1.1" 200 16
+2022-05-18 19:42:35,646 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:478	Unlocking targets: ['0.0.0.0:8080']
+2022-05-18 19:42:35,652 [INFO] yandextank.plugins.DataUploader.plugin plugin.py:480	0.0.0.0:8080
+2022-05-18 19:42:35,656 [INFO] yandextank.core.tankcore tankcore.py:561	Releasing lock: /var/lock/lunapark_EnxFYU.lock
+2022-05-18 19:42:35,687 [DEBUG] yandextank.core.tankcore tankcore.py:367	Collecting artifacts
+2022-05-18 19:42:35,691 [INFO] yandextank.core.tankcore tankcore.py:368	Artifacts dir: /var/loadtest/logs/2022-05-18_19-42-31.038090
+2022-05-18 19:42:35,694 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: ./phout.log to /var/loadtest/logs/2022-05-18_19-42-31.038090/phout.log
+2022-05-18 19:42:35,711 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_MfJveu.log to /var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_MfJveu.log
+2022-05-18 19:42:35,713 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_MfJveu.log
+2022-05-18 19:42:35,716 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: validation_error.yaml to /var/loadtest/logs/2022-05-18_19-42-31.038090/validation_error.yaml
+2022-05-18 19:42:35,719 [WARNING] yandextank.core.tankcore tankcore.py:424	File not found to collect: validation_error.yaml
+2022-05-18 19:42:35,722 [DEBUG] yandextank.core.tankcore tankcore.py:422	Collecting file: /var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_config_Rs2mYJ.yaml to /var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_config_Rs2mYJ.yaml
+2022-05-18 19:42:35,725 [WARNING] yandextank.core.tankcore tankcore.py:429	File already exists: /var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_config_Rs2mYJ.yaml

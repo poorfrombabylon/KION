@@ -1,0 +1,151 @@
+-expvar flag is DEPRECATED. Use monitoring config section instead
+2022-05-21T12:19:45.470Z	INFO	cli/cli.go:217	Reading config	{"file": "/var/loadtest/logs/2022-05-21_12-19-42.474769/pandora_config_Qx2sDQ.yaml"}
+2022-05-21T12:19:45.517Z	INFO	engine/engine.go:140	Pool run started	{"pool": "HTTP pool"}
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+2022-05-21T12:19:46.516Z	INFO	cli/expvar.go:40	[ENGINE] 2 resp/s; 2 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+2022-05-21T12:19:47.514Z	INFO	cli/expvar.go:40	[ENGINE] 3 resp/s; 3 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+2022-05-21T12:19:48.518Z	INFO	cli/expvar.go:40	[ENGINE] 3 resp/s; 3 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+2022-05-21T12:19:49.514Z	INFO	cli/expvar.go:40	[ENGINE] 5 resp/s; 5 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+2022-05-21T12:19:50.515Z	INFO	cli/expvar.go:40	[ENGINE] 6 resp/s; 6 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+2022-05-21T12:19:51.514Z	INFO	cli/expvar.go:40	[ENGINE] 7 resp/s; 7 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+2022-05-21T12:19:52.516Z	INFO	cli/expvar.go:40	[ENGINE] 8 resp/s; 8 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+2022-05-21T12:19:53.513Z	INFO	cli/expvar.go:40	[ENGINE] 10 resp/s; 10 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+2022-05-21T12:19:54.515Z	INFO	cli/expvar.go:40	[ENGINE] 10 resp/s; 10 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 127.0.0.1:8080: connect: connection refused"
+2022-05-21T12:19:54.848Z	INFO	cli/cli.go:141	SIGINT received. Trying to stop gracefully.	{"timeout": "5s"}
+2022-05-21T12:19:54.850Z	INFO	engine/engine.go:161	Pool execution canceled	{"pool": "HTTP pool"}
+2022-05-21T12:19:54.851Z	INFO	engine/engine.go:102	Engine run canceled
+2022-05-21T12:19:54.854Z	INFO	engine/engine.go:66	Engine finished
+2022-05-21T12:19:54.853Z	INFO	engine/engine.go:143	Pool run finished	{"pool": "HTTP pool"}
+2022-05-21T12:19:54.853Z	INFO	engine/engine.go:351	All instances runs awaited.	{"pool": "HTTP pool", "awaited": 10}
+2022-05-21T12:19:54.855Z	FATAL	cli/cli.go:149	Engine interrupted	{"error": "context canceled"}
+github.com/yandex/pandora/cli.Run
+	/Users/nikitaratasnuk/go/pkg/mod/github.com/yandex/pandora@v0.3.8/cli/cli.go:149
+main.main
+	/Users/nikitaratasnuk/yandex.tank1/gun/gun.go:138
+runtime.main
+	/opt/homebrew/Cellar/go/1.18.2/libexec/src/runtime/proc.go:250
+2022-05-21T12:19:54.856Z	INFO	engine/engine.go:82	Pool run result suppressed	{"pool": "HTTP pool", "id": "HTTP pool", "error": "context canceled"}

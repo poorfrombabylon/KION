@@ -1,0 +1,39 @@
+-expvar flag is DEPRECATED. Use monitoring config section instead
+2022-05-21T06:54:50.843Z	INFO	cli/cli.go:217	Reading config	{"file": "/var/loadtest/logs/2022-05-21_06-54-48.102207/pandora_config_Eg8ykA.yaml"}
+2022-05-21T06:54:50.855Z	INFO	engine/engine.go:140	Pool run started	{"pool": "HTTP pool"}
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 0.0.0.0:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 0.0.0.0:8080: connect: connection refused"
+2022-05-21T06:54:51.856Z	INFO	cli/expvar.go:40	[ENGINE] 3 resp/s; 3 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 0.0.0.0:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 0.0.0.0:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 0.0.0.0:8080: connect: connection refused"
+2022-05-21T06:54:52.856Z	INFO	cli/expvar.go:40	[ENGINE] 6 resp/s; 6 req/s; 10 users; 0 active
+
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 0.0.0.0:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 0.0.0.0:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 0.0.0.0:8080: connect: connection refused"
+<nil>
+rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing dial tcp 0.0.0.0:8080: connect: connection refused"
+2022-05-21T06:54:53.849Z	INFO	cli/cli.go:141	SIGINT received. Trying to stop gracefully.	{"timeout": "5s"}
+2022-05-21T06:54:53.850Z	INFO	engine/engine.go:161	Pool execution canceled	{"pool": "HTTP pool"}
+2022-05-21T06:54:53.850Z	INFO	engine/engine.go:143	Pool run finished	{"pool": "HTTP pool"}
+2022-05-21T06:54:53.850Z	INFO	engine/engine.go:82	Pool run result suppressed	{"pool": "HTTP pool", "id": "HTTP pool", "error": "context canceled"}
+2022-05-21T06:54:53.850Z	INFO	engine/engine.go:102	Engine run canceled
+2022-05-21T06:54:53.851Z	INFO	engine/engine.go:66	Engine finished
+2022-05-21T06:54:53.850Z	INFO	engine/engine.go:351	All instances runs awaited.	{"pool": "HTTP pool", "awaited": 10}
+2022-05-21T06:54:53.851Z	FATAL	cli/cli.go:149	Engine interrupted	{"error": "context canceled"}
+github.com/yandex/pandora/cli.Run
+	C:/Users/itravnikov/go/pkg/mod/github.com/yandex/pandora@v0.3.8/cli/cli.go:149
+main.main
+	C:/Users/itravnikov/Desktop/yandex.tank/gun/gun.go:134
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:225

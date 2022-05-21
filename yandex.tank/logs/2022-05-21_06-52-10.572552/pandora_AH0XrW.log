@@ -1,0 +1,26 @@
+-expvar flag is DEPRECATED. Use monitoring config section instead
+2022-05-21T06:52:12.245Z	INFO	cli/cli.go:217	Reading config	{"file": "/var/loadtest/logs/2022-05-21_06-52-10.572552/pandora_config_IvZXPK.yaml"}
+2022-05-21T06:52:12.254Z	FATAL	cli/cli.go:226	Config decode failed	{"error": "1 error(s) decoding:\n\n* error decoding 'pools[0].gun': no plugins of type core.Gun has been registered for name My_custom_gun_name"}
+github.com/yandex/pandora/cli.readConfig
+	C:/load-testing/ams-load-grpc/guns/ams_contractor-assortment/vendor/github.com/yandex/pandora/cli/cli.go:226
+github.com/yandex/pandora/cli.Run
+	C:/load-testing/ams-load-grpc/guns/ams_contractor-assortment/vendor/github.com/yandex/pandora/cli/cli.go:115
+main.main
+	C:/load-testing/ams-load-grpc/guns/ams_contractor-assortment/gun.go:58
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:225
+error stacktrace:
+github.com/yandex/pandora/core/config.Decode
+	C:/load-testing/ams-load-grpc/guns/ams_contractor-assortment/vendor/github.com/yandex/pandora/core/config/config.go:22
+github.com/yandex/pandora/core/config.DecodeAndValidate
+	C:/load-testing/ams-load-grpc/guns/ams_contractor-assortment/vendor/github.com/yandex/pandora/core/config/config.go:26
+github.com/yandex/pandora/cli.readConfig
+	C:/load-testing/ams-load-grpc/guns/ams_contractor-assortment/vendor/github.com/yandex/pandora/cli/cli.go:224
+github.com/yandex/pandora/cli.Run
+	C:/load-testing/ams-load-grpc/guns/ams_contractor-assortment/vendor/github.com/yandex/pandora/cli/cli.go:115
+main.main
+	C:/load-testing/ams-load-grpc/guns/ams_contractor-assortment/gun.go:58
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:225
+runtime.goexit
+	C:/Program Files/Go/src/runtime/asm_amd64.s:1371

@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+option go_package = "../my_contracts";
+
+import "google/protobuf/duration.proto";
+
+service KionService {
+  // Создание записи
+  rpc CreateRecord(CreateRecordRequest) returns (CreateRecordResponse);
+  // Получение записи
+  rpc GetLatestRecord(GetLatestRecordRequest) returns (GetLatestRecordResponse);
+}
+
+message CreateRecordRequest{
+  string video_id = 1;
+  string user_id = 2;
+  string event_type = 3;
+  google.protobuf.Duration time = 4;
+}
+
+message CreateRecordResponse{
+  string state = 1;
+}
+
+message GetLatestRecordRequest{
+  string user_id = 1;
+  string video_id = 2;
+}
+
+message GetLatestRecordResponse{
+  google.protobuf.Duration time = 1;
+}

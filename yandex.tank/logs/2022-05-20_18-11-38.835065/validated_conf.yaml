@@ -1,0 +1,73 @@
+android: {enabled: false, package: yandextank.plugins.Android}
+autostop:
+  autostop: ['http(5xx,10%,5s)']
+  enabled: true
+  package: yandextank.plugins.Autostop
+  report_file: autostop_report.txt
+bfg: {enabled: false, package: yandextank.plugins.Bfg}
+console: {cases_max_spark: 120, cases_sort_by: count, disable_all_colors: false, disable_colors: '',
+  enabled: true, info_panel_width: 33, max_case_len: 32, package: yandextank.plugins.Console,
+  short_only: false, sizes_max_spark: 120, times_max_spark: 120}
+core: {affinity: '', api_jobno: 2022-05-20_18-11-38.835065, artifacts_base_dir: ./logs,
+  cmdline: /usr/local/bin/yandex-tank, ignore_lock: false, lock_dir: /var/lock/, pid: 1,
+  taskset_path: taskset, uuid: 6c1b1841-5a0d-4e33-9fdd-b44b5d8bde34}
+influx: {enabled: false, package: yandextank.plugins.Influx}
+jmeter: {enabled: false, package: yandextank.plugins.JMeter}
+json_report: {enabled: true, monitoring_log: monitoring.log, package: yandextank.plugins.JsonReport,
+  test_data_log: test_data.log}
+overload:
+  api_address: https://overload.yandex.net/
+  api_attempts: 60
+  api_timeout: 10
+  chunk_size: 500000
+  component: ''
+  connection_timeout: 30
+  enabled: true
+  ignore_target_lock: false
+  job_dsc: ''
+  job_name: none
+  jobno_file: jobno_file.txt
+  lock_targets: auto
+  log_data_requests: false
+  log_monitoring_requests: false
+  log_other_requests: false
+  log_status_requests: false
+  maintenance_attempts: 10
+  maintenance_timeout: 60
+  network_attempts: 60
+  network_timeout: 10
+  notify: []
+  operator: null
+  package: yandextank.plugins.DataUploader
+  send_status_period: 10
+  strict_lock: false
+  target_lock_duration: 30m
+  task: ''
+  threads_timeout: 60
+  token_file: token.txt
+  ver: ''
+  writer_endpoint: ''
+pandora:
+  affinity: ''
+  buffered_seconds: 2
+  config_content: {}
+  config_file: gun/load.yaml
+  enabled: true
+  expvar: true
+  package: yandextank.plugins.Pandora
+  pandora_cmd: http://mitme.net/pandora
+phantom:
+  address: localhost:8080
+  connection_test: false
+  enabled: false
+  header_http: '1.1'
+  headers: ['[Connection: close]']
+  load_profile: {load_type: rps, schedule: 'line(5, 30, 1m)'}
+  package: yandextank.plugins.Phantom
+  ssl: true
+  uris: [/]
+rcassert: {enabled: true, fail_code: 10, package: yandextank.plugins.RCAssert, pass: ''}
+rcheck: {disk_limit: 2048, enabled: true, interval: 10s, mem_limit: 512, package: yandextank.plugins.ResourceCheck}
+shellexec: {catch_out: false, enabled: true, end: '', package: yandextank.plugins.ShellExec,
+  poll: '', post_process: '', prepare: '', start: ''}
+telegraf: {enabled: false, package: yandextank.plugins.Telegraf}
