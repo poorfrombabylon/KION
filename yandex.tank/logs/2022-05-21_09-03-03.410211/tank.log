@@ -1,4 +1,0 @@
-2022-05-21 09:03:03,429 [INFO] root tankworker.py:122	Log file created
-2022-05-21 09:03:03,429 [INFO] root tankworker.py:126	Logging handler <FileHandler /Users/nikitaratasnuk/yandex.tank/tank_errors.log (WARNING)> added
-2022-05-21 09:03:03,429 [INFO] root tankworker.py:126	Logging handler <StreamHandler <stdout> (INFO)> added
-2022-05-21 09:03:03,429 [INFO] root tankworker.py:126	Logging handler <StreamHandler <stderr> (NOTSET)> added

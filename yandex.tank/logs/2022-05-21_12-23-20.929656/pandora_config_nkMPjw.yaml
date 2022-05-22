@@ -1,9 +1,0 @@
-pools:
-- ammo:
-    source: {path: ./json.ammo, type: file}
-    type: custom_provider
-  gun: {target: '127.0.0.1:8080', type: My_custom_gun_name}
-  id: HTTP pool
-  result: {destination: ./phout.log, type: phout}
-  rps: {duration: 180s, from: 1, to: 200, type: line}
-  startup: {times: 10, type: once}

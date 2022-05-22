@@ -1,9 +1,0 @@
-pools:
-- ammo:
-    source: {path: ./json.ammo, type: file}
-    type: custom_provider
-  gun: {target: 'host.docker.internal:8082', type: My_custom_gun_name}
-  id: HTTP pool
-  result: {destination: ./phout.log, type: phout}
-  rps: {duration: 60s, from: 900, to: 1000, type: line}
-  startup: {times: 10, type: once}
