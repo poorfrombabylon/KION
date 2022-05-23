@@ -5,9 +5,10 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/segmentio/kafka-go"
 	"log"
 	"time"
+
+	"github.com/segmentio/kafka-go"
 
 	ch "github.com/ClickHouse/clickhouse-go/v2"
 )
@@ -15,10 +16,10 @@ import (
 const createTableQuery = `
 	CREATE TABLE IF NOT EXISTS KION
 	(
-		VideoId UUID,
-		UserId UUID,
+		VideoId String,
+		UserId String,
 		EventType String,
-		EventDuration Int,
+		Duration Int,
 		EventTime DateTime('Europe/London')
 	)
 
@@ -29,10 +30,10 @@ const createTableQuery = `
 const createKafkaTableQuery = `
 	CREATE TABLE IF NOT EXISTS KION_queue
 	(
-		VideoId UUID,
-		UserId UUID,
+		VideoId String,
+		UserId String,
 		EventType String,
-		EventDuration Int,
+		Duration Int,
 		EventTime DateTime('Europe/London')
 	)
 	ENGINE = Kafka
@@ -44,7 +45,7 @@ const createKafkaTableQuery = `
 
 const createMaterializedViewQuery = `
 	CREATE MATERIALIZED VIEW IF NOT EXISTS KION_consumer TO KION AS
-	SELECT VideoId, UserId, EventType, EventDuration, EventTime
+	SELECT VideoId, UserId, EventType, Duration, EventTime
 	FROM KION_queue;
 `
 
@@ -119,7 +120,7 @@ func (r *RecordStorage) GetLatestRecord(ctx context.Context, userID domain.UserI
 	fmt.Println("Storage GetLatestRecord")
 
 	query := fmt.Sprintf(`
-		SELECT EventDuration FROM KION
+		SELECT Duration FROM KION
 		WHERE (UserId = '%s' AND VideoId = '%s')
 		ORDER BY EventTime DESC
 		LIMIT 1

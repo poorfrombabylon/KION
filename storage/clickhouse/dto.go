@@ -2,25 +2,24 @@ package clickhouse
 
 import (
 	"KION/domain"
-	"time"
 )
 
 type ModelDTO struct {
-	VideoID   string
-	UserID    string
-	VideoTime time.Duration
+	VideoId   string
+	UserId    string
+	Duration  int
 	EventType string
-	CreatedAt time.Time
+	EventTime string
 }
 
 func transformModel(model domain.Model) ModelDTO {
 
 	newModel := ModelDTO{
-		VideoID:   model.GetVideoID().String(),
-		UserID:    model.GetUserID().String(),
-		VideoTime: model.GetVideoTime(),
+		VideoId:   model.GetVideoID().String(),
+		UserId:    model.GetUserID().String(),
+		Duration:  int(model.GetVideoTime().Seconds()),
 		EventType: model.GetEvent(),
-		CreatedAt: model.GetCreatedAt(),
+		EventTime: model.GetCreatedAt().Format("2006-01-02 15:04:05"),
 	}
 
 	return newModel
