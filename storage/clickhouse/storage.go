@@ -35,8 +35,8 @@ const createKafkaTableQuery = `
 	)
 	ENGINE = Kafka
 	SETTINGS kafka_broker_list = '10.244.0.6:9092',
-       		 kafka_topic_list = 'test',
-       		 kafka_group_name = 'test',
+       		 kafka_topic_list = 'kion-event-topic',
+       		 kafka_group_name = 'kion',
        		 kafka_format = 'JSONEachRow';
 `
 
