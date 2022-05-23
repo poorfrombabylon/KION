@@ -1,0 +1,860 @@
+2022-05-16 20:19:33,172	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for localhost, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2022-05-16 20:19:33,183	Job number is not available yet
+2022-05-16 20:19:33,186	Job number is not available yet
+2022-05-16 20:19:33,208	File already exists: /var/loadtest/logs/2022-05-16_20-19-32.827611/phantom_stat_8zdhkL.log
+2022-05-16 20:19:33,213	File already exists: /var/loadtest/logs/2022-05-16_20-19-32.827611/answ_Rmzxao.log
+2022-05-16 20:19:33,221	File already exists: /var/loadtest/logs/2022-05-16_20-19-32.827611/phantom_9J0vrt.log
+2022-05-16 20:19:33,232	File not found to collect: validation_error.yaml
+2022-05-16 20:19:33,242	File already exists: /var/loadtest/logs/2022-05-16_20-19-32.827611/phout_zORM1M.log
+2022-05-16 20:20:56,482	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for localhost, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2022-05-16 20:20:56,493	Job number is not available yet
+2022-05-16 20:20:56,495	Job number is not available yet
+2022-05-16 20:20:56,520	File already exists: /var/loadtest/logs/2022-05-16_20-20-56.176872/phantom_stat_I2tMAQ.log
+2022-05-16 20:20:56,522	File already exists: /var/loadtest/logs/2022-05-16_20-20-56.176872/answ_jS3bJ9.log
+2022-05-16 20:20:56,527	File already exists: /var/loadtest/logs/2022-05-16_20-20-56.176872/phout_zIRtLc.log
+2022-05-16 20:20:56,532	File not found to collect: validation_error.yaml
+2022-05-16 20:20:56,535	File already exists: /var/loadtest/logs/2022-05-16_20-20-56.176872/phantom_WyEaFD.log
+2022-05-16 20:21:30,807	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for localhost, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2022-05-16 20:21:30,825	Job number is not available yet
+2022-05-16 20:21:30,832	Job number is not available yet
+2022-05-16 20:21:30,862	File already exists: /var/loadtest/logs/2022-05-16_20-21-30.471649/phout_piPd7l.log
+2022-05-16 20:21:30,866	File already exists: /var/loadtest/logs/2022-05-16_20-21-30.471649/answ_vw2VFK.log
+2022-05-16 20:21:30,871	File not found to collect: validation_error.yaml
+2022-05-16 20:21:30,876	File already exists: /var/loadtest/logs/2022-05-16_20-21-30.471649/phantom_stat_tfUPGY.log
+2022-05-16 20:21:30,883	File already exists: /var/loadtest/logs/2022-05-16_20-21-30.471649/phantom_07W8th.log
+2022-05-16 20:22:15,996	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for localhost, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2022-05-16 20:22:16,005	Job number is not available yet
+2022-05-16 20:22:16,007	Job number is not available yet
+2022-05-16 20:22:16,028	File already exists: /var/loadtest/logs/2022-05-16_20-22-15.662742/phout_6KF64S.log
+2022-05-16 20:22:16,031	File already exists: /var/loadtest/logs/2022-05-16_20-22-15.662742/phantom_stat_XfrcUz.log
+2022-05-16 20:22:16,035	File already exists: /var/loadtest/logs/2022-05-16_20-22-15.662742/phantom_BqTz7o.log
+2022-05-16 20:22:16,040	File not found to collect: validation_error.yaml
+2022-05-16 20:22:16,047	File already exists: /var/loadtest/logs/2022-05-16_20-22-15.662742/answ_rApIN_.log
+2022-05-16 20:23:22,873	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for localhost, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2022-05-16 20:23:22,895	Job number is not available yet
+2022-05-16 20:23:22,899	Job number is not available yet
+2022-05-16 20:23:22,922	File already exists: /var/loadtest/logs/2022-05-16_20-23-22.563408/answ_uHwkrU.log
+2022-05-16 20:23:22,929	File already exists: /var/loadtest/logs/2022-05-16_20-23-22.563408/phantom_stat_q7Wbfj.log
+2022-05-16 20:23:22,936	File not found to collect: validation_error.yaml
+2022-05-16 20:23:22,940	File already exists: /var/loadtest/logs/2022-05-16_20-23-22.563408/phout_qAEoOL.log
+2022-05-16 20:23:22,948	File already exists: /var/loadtest/logs/2022-05-16_20-23-22.563408/phantom_ttWUjK.log
+2022-05-16 20:24:00,797	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 0.0.0.0, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2022-05-16 20:24:00,808	Job number is not available yet
+2022-05-16 20:24:00,810	Job number is not available yet
+2022-05-16 20:24:00,837	File already exists: /var/loadtest/logs/2022-05-16_20-24-00.154217/phout_P7DrEi.log
+2022-05-16 20:24:00,843	File already exists: /var/loadtest/logs/2022-05-16_20-24-00.154217/answ_yO4zo9.log
+2022-05-16 20:24:00,850	File not found to collect: validation_error.yaml
+2022-05-16 20:24:00,856	File already exists: /var/loadtest/logs/2022-05-16_20-24-00.154217/phantom_stat_tvwK33.log
+2022-05-16 20:24:00,860	File already exists: /var/loadtest/logs/2022-05-16_20-24-00.154217/phantom_O3oYY2.log
+2022-05-16 20:24:44,566	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for 0.0.0.0, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2022-05-16 20:24:44,604	Job number is not available yet
+2022-05-16 20:24:44,606	Job number is not available yet
+2022-05-16 20:24:44,626	File already exists: /var/loadtest/logs/2022-05-16_20-24-44.292749/phout_gVh8YJ.log
+2022-05-16 20:24:44,632	File already exists: /var/loadtest/logs/2022-05-16_20-24-44.292749/phantom_Mmc24F.log
+2022-05-16 20:24:44,636	File not found to collect: validation_error.yaml
+2022-05-16 20:24:44,639	File already exists: /var/loadtest/logs/2022-05-16_20-24-44.292749/answ_UUuf0x.log
+2022-05-16 20:24:44,643	File already exists: /var/loadtest/logs/2022-05-16_20-24-44.292749/phantom_stat_HZ01OG.log
+2022-05-16 20:25:06,551	Exception occurred:
+<type 'exceptions.RuntimeError'>: All connection attempts failed for localhost, use {phantom.connection_test: false} to disable it
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 375, in run
+    self.core.plugins_configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 245, in plugins_configure
+    plugin.configure()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 72, in configure
+    self.phantom_config = self.phantom.config_file
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/plugin.py", line 81, in phantom
+    self._phantom.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 95, in read_config
+    stream.read_config()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/Phantom/utils.py", line 275, in read_config
+    self.address, do_test_connect, explicit_port)
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/common/util.py", line 555, in resolve
+    raise RuntimeError(msg % address_str)
+
+2022-05-16 20:25:06,562	Job number is not available yet
+2022-05-16 20:25:06,565	Job number is not available yet
+2022-05-16 20:25:06,584	File already exists: /var/loadtest/logs/2022-05-16_20-25-06.259743/answ_qJ3ws0.log
+2022-05-16 20:25:06,589	File already exists: /var/loadtest/logs/2022-05-16_20-25-06.259743/phout_zDgJWe.log
+2022-05-16 20:25:06,593	File not found to collect: validation_error.yaml
+2022-05-16 20:25:06,598	File already exists: /var/loadtest/logs/2022-05-16_20-25-06.259743/phantom_stat_7GcJwV.log
+2022-05-16 20:25:06,601	File already exists: /var/loadtest/logs/2022-05-16_20-25-06.259743/phantom_iOGeEQ.log
+2022-05-16 20:28:21,795	File already exists: /var/loadtest/logs/2022-05-16_20-27-14.965137/phantom_stdout_stderr_0QrEyL.log
+2022-05-16 20:28:21,802	File already exists: /var/loadtest/logs/2022-05-16_20-27-14.965137/phout_vfFDiV.log
+2022-05-16 20:28:21,807	File already exists: /var/loadtest/logs/2022-05-16_20-27-14.965137/answ_K3uMSS.log
+2022-05-16 20:28:21,811	File already exists: /var/loadtest/logs/2022-05-16_20-27-14.965137/phantom_stat_uo3iyH.log
+2022-05-16 20:28:21,815	File already exists: /var/loadtest/logs/2022-05-16_20-27-14.965137/phantom_c5YiWp.conf
+2022-05-16 20:28:21,822	File not found to collect: validation_error.yaml
+2022-05-16 20:28:21,825	File already exists: /var/loadtest/logs/2022-05-16_20-27-14.965137/phantom_NWQ865.log
+2022-05-17 17:28:30,205	File already exists: /var/loadtest/logs/2022-05-17_17-27-23.376669/phout_QA10kK.log
+2022-05-17 17:28:30,210	File already exists: /var/loadtest/logs/2022-05-17_17-27-23.376669/phantom_jsWREl.log
+2022-05-17 17:28:30,214	File already exists: /var/loadtest/logs/2022-05-17_17-27-23.376669/phantom_0EqB2A.conf
+2022-05-17 17:28:30,219	File not found to collect: validation_error.yaml
+2022-05-17 17:28:30,222	File already exists: /var/loadtest/logs/2022-05-17_17-27-23.376669/phantom_stdout_stderr_FfqHa9.log
+2022-05-17 17:28:30,236	File already exists: /var/loadtest/logs/2022-05-17_17-27-23.376669/phantom_stat_EUKJkm.log
+2022-05-17 17:28:30,239	File already exists: /var/loadtest/logs/2022-05-17_17-27-23.376669/answ_0rAZYi.log
+2022-05-18 19:37:58,180	Failed to get info about ammo path
+2022-05-18 19:38:00,248	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/pandora', '-expvar', '/var/loadtest/logs/2022-05-18_19-37-57.107611/pandora_config_MCJXd6.yaml']
+<traceback object at 0x403de9cf80>
+2022-05-18 19:38:01,830	File already exists: /var/loadtest/logs/2022-05-18_19-37-57.107611/pandora_wdVcwS.log
+2022-05-18 19:38:01,838	File already exists: /var/loadtest/logs/2022-05-18_19-37-57.107611/pandora_config_MCJXd6.yaml
+2022-05-18 19:38:01,858	File not found to collect: validation_error.yaml
+2022-05-18 19:38:52,987	Failed to get info about ammo path
+2022-05-18 19:38:54,959	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/gun/gun', '-expvar', '/var/loadtest/logs/2022-05-18_19-38-52.036621/pandora_config_rznMFa.yaml']
+<traceback object at 0x403df9cb90>
+2022-05-18 19:38:56,492	File already exists: /var/loadtest/logs/2022-05-18_19-38-52.036621/pandora_config_rznMFa.yaml
+2022-05-18 19:38:56,530	File already exists: /var/loadtest/logs/2022-05-18_19-38-52.036621/pandora_DjL7KD.log
+2022-05-18 19:38:56,548	File not found to collect: validation_error.yaml
+2022-05-18 19:39:25,789	Failed to get info about ammo path
+2022-05-18 19:39:27,972	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/usr/bin/pandora', '-expvar', '/var/loadtest/logs/2022-05-18_19-39-24.775089/pandora_config_4HLSV6.yaml']
+<traceback object at 0x403df9bc20>
+2022-05-18 19:39:30,497	File already exists: /var/loadtest/logs/2022-05-18_19-39-24.775089/pandora_config_4HLSV6.yaml
+2022-05-18 19:39:30,505	File already exists: /var/loadtest/logs/2022-05-18_19-39-24.775089/pandora_ky3d9a.log
+2022-05-18 19:39:30,512	File not found to collect: validation_error.yaml
+2022-05-18 19:42:32,020	Failed to get info about ammo path
+2022-05-18 19:42:34,287	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['pandora/main', '-expvar', '/var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_config_Rs2mYJ.yaml']
+<traceback object at 0x403de9cf38>
+2022-05-18 19:42:35,713	File already exists: /var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_MfJveu.log
+2022-05-18 19:42:35,719	File not found to collect: validation_error.yaml
+2022-05-18 19:42:35,725	File already exists: /var/loadtest/logs/2022-05-18_19-42-31.038090/pandora_config_Rs2mYJ.yaml
+2022-05-18 19:46:55,012	Failed to get info about ammo path
+2022-05-18 19:46:57,115	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['pandora', '-expvar', '/var/loadtest/logs/2022-05-18_19-46-53.877947/pandora_config_4yTrP9.yaml']
+<traceback object at 0x403de9cf38>
+2022-05-18 19:46:59,751	File already exists: /var/loadtest/logs/2022-05-18_19-46-53.877947/pandora_HAJ5B7.log
+2022-05-18 19:46:59,761	File not found to collect: validation_error.yaml
+2022-05-18 19:46:59,781	File already exists: /var/loadtest/logs/2022-05-18_19-46-53.877947/pandora_config_4yTrP9.yaml
+2022-05-18 19:48:13,539	Failed to get info about ammo path
+2022-05-18 19:48:15,635	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['pandora/pandora', '-expvar', '/var/loadtest/logs/2022-05-18_19-48-12.569393/pandora_config_oPxtqZ.yaml']
+<traceback object at 0x403df9bb48>
+2022-05-18 19:48:17,178	File already exists: /var/loadtest/logs/2022-05-18_19-48-12.569393/pandora_config_oPxtqZ.yaml
+2022-05-18 19:48:17,184	File not found to collect: validation_error.yaml
+2022-05-18 19:48:17,191	File already exists: /var/loadtest/logs/2022-05-18_19-48-12.569393/pandora_1o42Na.log
+2022-05-18 19:48:42,032	Failed to get info about ammo path
+2022-05-18 19:48:44,387	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['pandora', '-expvar', '/var/loadtest/logs/2022-05-18_19-48-40.912261/pandora_config_nTVUx5.yaml']
+<traceback object at 0x403de9cef0>
+2022-05-18 19:48:45,925	File already exists: /var/loadtest/logs/2022-05-18_19-48-40.912261/pandora_config_nTVUx5.yaml
+2022-05-18 19:48:45,938	File not found to collect: validation_error.yaml
+2022-05-18 19:48:45,960	File already exists: /var/loadtest/logs/2022-05-18_19-48-40.912261/pandora_DwI9uH.log
+2022-05-18 19:49:34,632	Failed to get info about ammo path
+2022-05-18 19:49:36,860	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['pandora/pandora', '-expvar', '/var/loadtest/logs/2022-05-18_19-49-32.482821/pandora_config_8NTgEr.yaml']
+<traceback object at 0x403df9bb90>
+2022-05-18 19:49:40,027	File not found to collect: validation_error.yaml
+2022-05-18 19:49:40,057	File already exists: /var/loadtest/logs/2022-05-18_19-49-32.482821/pandora_config_8NTgEr.yaml
+2022-05-18 19:49:40,101	File already exists: /var/loadtest/logs/2022-05-18_19-49-32.482821/pandora_qqn594.log
+2022-05-18 19:50:08,609	Failed to get info about ammo path
+2022-05-18 19:50:10,892	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./pandora/pandora', '-expvar', '/var/loadtest/logs/2022-05-18_19-50-07.352318/pandora_config_UFKfer.yaml']
+<traceback object at 0x403df9bc20>
+2022-05-18 19:50:12,478	File already exists: /var/loadtest/logs/2022-05-18_19-50-07.352318/pandora_TndLqk.log
+2022-05-18 19:50:12,482	File not found to collect: validation_error.yaml
+2022-05-18 19:50:12,488	File already exists: /var/loadtest/logs/2022-05-18_19-50-07.352318/pandora_config_UFKfer.yaml
+2022-05-18 19:50:50,645	Failed to get info about ammo path
+2022-05-18 19:50:52,772	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun/gun', '-expvar', '/var/loadtest/logs/2022-05-18_19-50-49.606521/pandora_config_1dtkbq.yaml']
+<traceback object at 0x403df9bb90>
+2022-05-18 19:50:54,243	File already exists: /var/loadtest/logs/2022-05-18_19-50-49.606521/pandora_CTqYah.log
+2022-05-18 19:50:54,249	File not found to collect: validation_error.yaml
+2022-05-18 19:50:54,256	File already exists: /var/loadtest/logs/2022-05-18_19-50-49.606521/pandora_config_1dtkbq.yaml
+2022-05-18 19:53:49,867	Failed to get info about ammo path
+2022-05-18 19:53:51,961	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/gun/gun', '-expvar', '/var/loadtest/logs/2022-05-18_19-53-48.831951/pandora_config_lJ1keX.yaml']
+<traceback object at 0x403df9cb90>
+2022-05-18 19:53:53,571	File already exists: /var/loadtest/logs/2022-05-18_19-53-48.831951/pandora_config_lJ1keX.yaml
+2022-05-18 19:53:53,577	File not found to collect: validation_error.yaml
+2022-05-18 19:53:53,585	File already exists: /var/loadtest/logs/2022-05-18_19-53-48.831951/pandora_2vatak.log
+2022-05-18 19:54:08,976	Failed to get info about ammo path
+2022-05-18 19:54:10,891	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/gun/gun', '-expvar', '/var/loadtest/logs/2022-05-18_19-54-07.998465/pandora_config_OVrORS.yaml']
+<traceback object at 0x403df9cb48>
+2022-05-18 19:54:12,378	File already exists: /var/loadtest/logs/2022-05-18_19-54-07.998465/pandora_i7qhp1.log
+2022-05-18 19:54:12,390	File not found to collect: validation_error.yaml
+2022-05-18 19:54:12,402	File already exists: /var/loadtest/logs/2022-05-18_19-54-07.998465/pandora_config_OVrORS.yaml
+2022-05-18 19:55:02,837	Failed to get info about ammo path
+2022-05-18 19:55:04,656	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['gun', '-expvar', '/var/loadtest/logs/2022-05-18_19-55-01.826492/pandora_config_8vbEJP.yaml']
+<traceback object at 0x403df9bbd8>
+2022-05-18 19:55:06,277	File already exists: /var/loadtest/logs/2022-05-18_19-55-01.826492/pandora_c_gVm_.log
+2022-05-18 19:55:06,297	File not found to collect: validation_error.yaml
+2022-05-18 19:55:06,312	File already exists: /var/loadtest/logs/2022-05-18_19-55-01.826492/pandora_config_8vbEJP.yaml
+2022-05-18 20:06:04,111	Failed to get info about ammo path
+2022-05-18 20:06:06,513	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['gun', '-expvar', '/var/loadtest/logs/2022-05-18_20-06-03.147812/pandora_config_YoRiDr.yaml']
+<traceback object at 0x403de9cf38>
+2022-05-18 20:06:08,235	File already exists: /var/loadtest/logs/2022-05-18_20-06-03.147812/pandora_config_YoRiDr.yaml
+2022-05-18 20:06:08,243	File not found to collect: validation_error.yaml
+2022-05-18 20:06:08,249	File already exists: /var/loadtest/logs/2022-05-18_20-06-03.147812/pandora_yTt1Wc.log
+2022-05-18 20:13:27,098	Failed to get info about ammo path
+2022-05-18 20:13:28,956	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/gun/gun', '-expvar', '/var/loadtest/logs/2022-05-18_20-13-24.076364/pandora_config_Oneo26.yaml']
+<traceback object at 0x403df9cbd8>
+2022-05-18 20:13:30,757	File already exists: /var/loadtest/logs/2022-05-18_20-13-24.076364/pandora_config_Oneo26.yaml
+2022-05-18 20:13:30,767	File not found to collect: validation_error.yaml
+2022-05-18 20:13:30,780	File already exists: /var/loadtest/logs/2022-05-18_20-13-24.076364/pandora_QiR5xl.log
+2022-05-18 20:14:08,190	Failed to get info about ammo path
+2022-05-18 20:14:10,441	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/gun/gun', '-expvar', '/var/loadtest/logs/2022-05-18_20-14-07.066899/pandora_config_9EW7x0.yaml']
+<traceback object at 0x403de9df38>
+2022-05-18 20:14:11,923	File already exists: /var/loadtest/logs/2022-05-18_20-14-07.066899/pandora_KfhKYx.log
+2022-05-18 20:14:11,930	File already exists: /var/loadtest/logs/2022-05-18_20-14-07.066899/pandora_config_9EW7x0.yaml
+2022-05-18 20:14:11,936	File not found to collect: validation_error.yaml
+2022-05-18 21:15:37,510	Failed to get info about ammo path
+2022-05-18 21:15:39,311	Test interrupted:
+<type 'exceptions.UnicodeEncodeError'>: 'ascii' codec can't encode character u'\u2013' in position 38: ordinal not in range(128)
+<traceback object at 0x402234f8c0>
+2022-05-18 21:15:40,777	File not found to collect: validation_error.yaml
+2022-05-18 21:15:40,791	File already exists: /var/loadtest/logs/2022-05-18_21-15-35.974074/pandora_BJOprs.log
+2022-05-18 21:15:40,804	File already exists: /var/loadtest/logs/2022-05-18_21-15-35.974074/pandora_config_1hBRiH.yaml
+2022-05-18 21:18:48,603	Failed to get info about ammo path
+2022-05-18 21:18:50,360	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/Users/nikitaratasnuk/yandex.tank/gun/gun', '-expvar', '/var/loadtest/logs/2022-05-18_21-18-47.665372/pandora_config_CvuX5Q.yaml']
+<traceback object at 0x403e21cef0>
+2022-05-18 21:18:51,785	File already exists: /var/loadtest/logs/2022-05-18_21-18-47.665372/pandora_ONr5q6.log
+2022-05-18 21:18:51,800	File already exists: /var/loadtest/logs/2022-05-18_21-18-47.665372/pandora_config_CvuX5Q.yaml
+2022-05-18 21:18:51,812	File not found to collect: validation_error.yaml
+2022-05-18 21:19:21,844	Failed to get info about ammo path
+2022-05-18 21:19:23,604	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/Users/nikitaratasnuk/yandex.tank/pandora/pandora', '-expvar', '/var/loadtest/logs/2022-05-18_21-19-20.931030/pandora_config_peLNbK.yaml']
+<traceback object at 0x403df9bb90>
+2022-05-18 21:19:24,726	File not found to collect: validation_error.yaml
+2022-05-18 21:19:24,729	File already exists: /var/loadtest/logs/2022-05-18_21-19-20.931030/pandora_hOgxi9.log
+2022-05-18 21:19:24,735	File already exists: /var/loadtest/logs/2022-05-18_21-19-20.931030/pandora_config_peLNbK.yaml
+2022-05-20 06:42:41,928	Failed to get info about ammo path
+2022-05-20 06:42:43,697	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/Users/nikitaratasnuk/yandex.tank/gun/gun', '-expvar', '/var/loadtest/logs/2022-05-20_06-42-40.766921/pandora_config_CQPeEV.yaml']
+<traceback object at 0x403e31bb90>
+2022-05-20 06:42:44,867	File not found to collect: validation_error.yaml
+2022-05-20 06:42:44,872	File already exists: /var/loadtest/logs/2022-05-20_06-42-40.766921/pandora_config_CQPeEV.yaml
+2022-05-20 06:42:44,880	File already exists: /var/loadtest/logs/2022-05-20_06-42-40.766921/pandora_Ddz_dt.log
+2022-05-20 06:45:11,731	Failed to get info about ammo path
+2022-05-20 06:45:13,138	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/yandex.tank/gun/gun', '-expvar', '/var/loadtest/logs/2022-05-20_06-45-10.863612/pandora_config_yseyrK.yaml']
+<traceback object at 0x403de9bf80>
+2022-05-20 06:45:14,562	File already exists: /var/loadtest/logs/2022-05-20_06-45-10.863612/pandora_config_yseyrK.yaml
+2022-05-20 06:45:14,570	File already exists: /var/loadtest/logs/2022-05-20_06-45-10.863612/pandora_UHr9nH.log
+2022-05-20 06:45:14,575	File not found to collect: validation_error.yaml
+2022-05-20 06:45:24,046	Failed to get info about ammo path
+2022-05-20 06:45:25,444	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/gun/gun', '-expvar', '/var/loadtest/logs/2022-05-20_06-45-23.104680/pandora_config_8GbBd7.yaml']
+<traceback object at 0x403de9cf80>
+2022-05-20 06:45:26,670	File already exists: /var/loadtest/logs/2022-05-20_06-45-23.104680/pandora_config_8GbBd7.yaml
+2022-05-20 06:45:26,714	File not found to collect: validation_error.yaml
+2022-05-20 06:45:26,720	File already exists: /var/loadtest/logs/2022-05-20_06-45-23.104680/pandora_W_x43o.log
+2022-05-20 06:48:32,479	Failed to get info about ammo path
+2022-05-20 06:48:33,885	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/gun/gun', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_06-48-31.546870/pandora_config_Z7wpbZ.yaml']
+<traceback object at 0x403df9cb48>
+2022-05-20 06:48:35,241	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_06-48-31.546870/pandora_Kotc3a.log
+2022-05-20 06:48:35,251	File not found to collect: validation_error.yaml
+2022-05-20 06:48:35,256	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_06-48-31.546870/pandora_config_Z7wpbZ.yaml
+2022-05-20 06:49:05,127	Failed to get info about ammo path
+2022-05-20 06:49:06,452	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/pandora/pandora', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_06-49-04.305796/pandora_config_CUH8qB.yaml']
+<traceback object at 0x403de9cfc8>
+2022-05-20 06:49:07,733	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_06-49-04.305796/pandora_gwM1l1.log
+2022-05-20 06:49:07,738	File not found to collect: validation_error.yaml
+2022-05-20 06:49:07,743	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_06-49-04.305796/pandora_config_CUH8qB.yaml
+2022-05-20 06:58:20,573	Failed to get info about ammo path
+2022-05-20 06:58:21,838	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['https://disk.yandex.com/d/5L62rNZdT5PEog', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_06-58-19.700199/pandora_config_sgSCU3.yaml']
+<traceback object at 0x403e31bb48>
+2022-05-20 06:58:23,083	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_06-58-19.700199/pandora_config_sgSCU3.yaml
+2022-05-20 06:58:23,100	File not found to collect: validation_error.yaml
+2022-05-20 06:58:23,103	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_06-58-19.700199/pandora_iGQ8Bj.log
+2022-05-20 07:59:17,218	Failed to get info about ammo path
+2022-05-20 07:59:18,601	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['mitme.net/gun', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_07-59-16.262485/pandora_config_h7hKqs.yaml']
+<traceback object at 0x403df9bb90>
+2022-05-20 07:59:19,880	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_07-59-16.262485/pandora_S0t5Yi.log
+2022-05-20 07:59:19,891	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_07-59-16.262485/pandora_config_h7hKqs.yaml
+2022-05-20 07:59:19,898	File not found to collect: validation_error.yaml
+2022-05-20 07:59:46,928	Failed to get info about ammo path
+2022-05-20 07:59:48,886	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['https://mitme.net/gun', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_07-59-45.732648/pandora_config_BzN8_p.yaml']
+<traceback object at 0x403df9bbd8>
+2022-05-20 07:59:51,122	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_07-59-45.732648/pandora_config_BzN8_p.yaml
+2022-05-20 07:59:51,180	File not found to collect: validation_error.yaml
+2022-05-20 07:59:51,184	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_07-59-45.732648/pandora_ucjNWq.log
+2022-05-20 08:02:18,342	Failed to get info about ammo path
+2022-05-20 08:02:19,927	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['https://mitme.net/gun', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_08-02-17.421742/pandora_config_o9eFXg.yaml']
+<traceback object at 0x403df9bb48>
+2022-05-20 08:02:21,406	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_08-02-17.421742/pandora_dUKkSG.log
+2022-05-20 08:02:21,413	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_08-02-17.421742/pandora_config_o9eFXg.yaml
+2022-05-20 08:02:21,421	File not found to collect: validation_error.yaml
+2022-05-20 18:05:37,275	Failed to get info about ammo path
+2022-05-20 18:05:38,851	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['https://mitme.net/gun', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-05-36.470444/pandora_config_cHUHL3.yaml']
+<traceback object at 0x403df9bb48>
+2022-05-20 18:05:40,261	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-05-36.470444/pandora_6wN_Xj.log
+2022-05-20 18:05:40,267	File not found to collect: validation_error.yaml
+2022-05-20 18:05:40,274	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-05-36.470444/pandora_config_cHUHL3.yaml
+2022-05-20 18:06:09,308	Failed to get info about ammo path
+2022-05-20 18:06:10,688	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['http://mitme.net/gun', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-06-08.453249/pandora_config_VBi21r.yaml']
+<traceback object at 0x403df9bb48>
+2022-05-20 18:06:11,928	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-06-08.453249/pandora_config_VBi21r.yaml
+2022-05-20 18:06:11,940	File not found to collect: validation_error.yaml
+2022-05-20 18:06:11,945	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-06-08.453249/pandora_VZ3DFf.log
+2022-05-20 18:10:18,005	Failed to get info about ammo path
+2022-05-20 18:10:19,483	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['http://mitme.net/pandora', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-10-17.077670/pandora_config_0FKvmy.yaml']
+<traceback object at 0x403df9bbd8>
+2022-05-20 18:10:20,915	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-10-17.077670/pandora_uIGUhF.log
+2022-05-20 18:10:20,921	File not found to collect: validation_error.yaml
+2022-05-20 18:10:20,927	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-10-17.077670/pandora_config_0FKvmy.yaml
+2022-05-20 18:11:39,718	Failed to get info about ammo path
+2022-05-20 18:11:41,075	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['http://mitme.net/pandora', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-11-38.835065/pandora_config_CZ6yai.yaml']
+<traceback object at 0x403de9bf80>
+2022-05-20 18:11:42,727	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-11-38.835065/pandora_config_CZ6yai.yaml
+2022-05-20 18:11:42,732	File not found to collect: validation_error.yaml
+2022-05-20 18:11:42,736	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-11-38.835065/pandora_m8X6V9.log
+2022-05-20 18:13:28,840	Failed to get info about ammo path
+2022-05-20 18:13:30,305	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['pandora', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-13-27.962414/pandora_config_ozG583.yaml']
+<traceback object at 0x403de9cf38>
+2022-05-20 18:13:31,903	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-13-27.962414/pandora_eT_2Du.log
+2022-05-20 18:13:31,908	File not found to collect: validation_error.yaml
+2022-05-20 18:13:31,915	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-13-27.962414/pandora_config_ozG583.yaml
+2022-05-20 18:15:44,754	Failed to get info about ammo path
+2022-05-20 18:15:46,453	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['http://mitme.net/pandora', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-15-43.847625/pandora_config_cxmaQ6.yaml']
+<traceback object at 0x403de9cef0>
+2022-05-20 18:15:47,862	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-15-43.847625/pandora_config_cxmaQ6.yaml
+2022-05-20 18:15:47,870	File not found to collect: validation_error.yaml
+2022-05-20 18:15:47,878	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-15-43.847625/pandora_umLONC.log
+2022-05-20 18:17:15,266	Failed to get info about ammo path
+2022-05-20 18:17:16,815	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun1', '-expvar', '/Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-17-14.338570/pandora_config_Ag6QQo.yaml']
+<traceback object at 0x403df9bbd8>
+2022-05-20 18:17:18,278	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-17-14.338570/pandora_config_Ag6QQo.yaml
+2022-05-20 18:17:18,285	File already exists: /Users/nikitaratasnuk/yandex.tank/logs/2022-05-20_18-17-14.338570/pandora_RMJ2wp.log
+2022-05-20 18:17:18,292	File not found to collect: validation_error.yaml
+2022-05-20 18:20:58,022	Failed to get info about ammo path
+2022-05-20 18:20:59,508	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun', '-expvar', '/Users/nikitaratasnuk/yandex.tank/gun/logs/2022-05-20_18-20-57.239881/pandora_config_KFOc7p.yaml']
+<traceback object at 0x403e31bb90>
+2022-05-20 18:21:00,801	File already exists: /Users/nikitaratasnuk/yandex.tank/gun/logs/2022-05-20_18-20-57.239881/pandora_config_KFOc7p.yaml
+2022-05-20 18:21:00,810	File not found to collect: validation_error.yaml
+2022-05-20 18:21:00,816	File already exists: /Users/nikitaratasnuk/yandex.tank/gun/logs/2022-05-20_18-20-57.239881/pandora_THCprW.log
+2022-05-20 18:25:06,433	Failed to get info about ammo path
+2022-05-20 18:25:07,883	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun', '-expvar', '/Users/nikitaratasnuk/yandex.tank/gun/logs/2022-05-20_18-25-05.636354/pandora_config_FUsMGc.yaml']
+<traceback object at 0x403e21cb90>
+2022-05-20 18:25:09,128	File already exists: /Users/nikitaratasnuk/yandex.tank/gun/logs/2022-05-20_18-25-05.636354/pandora_config_FUsMGc.yaml
+2022-05-20 18:25:09,133	File not found to collect: validation_error.yaml
+2022-05-20 18:25:09,137	File already exists: /Users/nikitaratasnuk/yandex.tank/gun/logs/2022-05-20_18-25-05.636354/pandora_zvlVI_.log
+2022-05-20 18:29:26,174	Failed to get info about ammo path
+2022-05-20 18:29:27,723	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun', '-expvar', '/var/loadtest/logs/2022-05-20_18-29-25.368325/pandora_config_dbbaHP.yaml']
+<traceback object at 0x403de9cb90>
+2022-05-20 18:29:29,097	File already exists: /var/loadtest/logs/2022-05-20_18-29-25.368325/pandora_config_dbbaHP.yaml
+2022-05-20 18:29:29,101	File already exists: /var/loadtest/logs/2022-05-20_18-29-25.368325/pandora_vcFJkM.log
+2022-05-20 18:29:29,107	File not found to collect: validation_error.yaml
+2022-05-20 18:30:14,552	Failed to get info about ammo path
+2022-05-20 18:30:16,102	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun1', '-expvar', '/var/loadtest/logs/2022-05-20_18-30-13.686248/pandora_config_Q2MOUj.yaml']
+<traceback object at 0x403dd9cf80>
+2022-05-20 18:30:17,576	File already exists: /var/loadtest/logs/2022-05-20_18-30-13.686248/pandora_config_Q2MOUj.yaml
+2022-05-20 18:30:17,581	File not found to collect: validation_error.yaml
+2022-05-20 18:30:17,586	File already exists: /var/loadtest/logs/2022-05-20_18-30-13.686248/pandora_IN1FRN.log
+2022-05-20 18:30:54,009	Failed to get info about ammo path
+2022-05-20 18:30:55,729	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun1', '-expvar', '/var/loadtest/logs/2022-05-20_18-30-53.164334/pandora_config_pgDdzH.yaml']
+<traceback object at 0x403de9cc68>
+2022-05-20 18:30:57,127	File already exists: /var/loadtest/logs/2022-05-20_18-30-53.164334/pandora_xzoXHQ.log
+2022-05-20 18:30:57,134	File not found to collect: validation_error.yaml
+2022-05-20 18:30:57,139	File already exists: /var/loadtest/logs/2022-05-20_18-30-53.164334/pandora_config_pgDdzH.yaml
+2022-05-20 18:31:08,963	Failed to get info about ammo path
+2022-05-20 18:31:10,739	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['gun1', '-expvar', '/var/loadtest/logs/2022-05-20_18-31-08.110339/pandora_config_YyJvmD.yaml']
+<traceback object at 0x403de9cb90>
+2022-05-20 18:31:11,957	File already exists: /var/loadtest/logs/2022-05-20_18-31-08.110339/pandora_config_YyJvmD.yaml
+2022-05-20 18:31:11,962	File not found to collect: validation_error.yaml
+2022-05-20 18:31:11,970	File already exists: /var/loadtest/logs/2022-05-20_18-31-08.110339/pandora_K9KhON.log
+2022-05-20 18:31:30,375	Failed to get info about ammo path
+2022-05-20 18:31:31,971	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun1', '-expvar', '/var/loadtest/logs/2022-05-20_18-31-29.557734/pandora_config_sWYJ4C.yaml']
+<traceback object at 0x403de9cb90>
+2022-05-20 18:31:33,452	File already exists: /var/loadtest/logs/2022-05-20_18-31-29.557734/pandora_config_sWYJ4C.yaml
+2022-05-20 18:31:33,458	File not found to collect: validation_error.yaml
+2022-05-20 18:31:33,466	File already exists: /var/loadtest/logs/2022-05-20_18-31-29.557734/pandora_i8f7Q3.log
+2022-05-20 18:31:54,439	Failed to get info about ammo path
+2022-05-20 18:31:55,879	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun1', '-expvar', '/var/loadtest/logs/2022-05-20_18-31-53.647484/pandora_config_6d7LXE.yaml']
+<traceback object at 0x403de9cc20>
+2022-05-20 18:31:57,299	File already exists: /var/loadtest/logs/2022-05-20_18-31-53.647484/pandora_config_6d7LXE.yaml
+2022-05-20 18:31:57,304	File not found to collect: validation_error.yaml
+2022-05-20 18:31:57,313	File already exists: /var/loadtest/logs/2022-05-20_18-31-53.647484/pandora_hmGx02.log
+2022-05-20 18:32:17,887	Failed to get info about ammo path
+2022-05-20 18:32:19,360	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun1', '-expvar', '/var/loadtest/logs/2022-05-20_18-32-17.107268/pandora_config_K61DFw.yaml']
+<traceback object at 0x403dd9ef38>
+2022-05-20 18:32:20,897	File already exists: /var/loadtest/logs/2022-05-20_18-32-17.107268/pandora_config_K61DFw.yaml
+2022-05-20 18:32:20,903	File not found to collect: validation_error.yaml
+2022-05-20 18:32:20,908	File already exists: /var/loadtest/logs/2022-05-20_18-32-17.107268/pandora_eRGmmt.log
+2022-05-20 18:36:20,577	Failed to get info about ammo path
+2022-05-20 18:36:22,159	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./pandora1', '-expvar', '/var/loadtest/logs/2022-05-20_18-36-19.786623/pandora_config_hJf2kp.yaml']
+<traceback object at 0x403dd9afc8>
+2022-05-20 18:36:23,512	File already exists: /var/loadtest/logs/2022-05-20_18-36-19.786623/pandora_UOsjuJ.log
+2022-05-20 18:36:23,519	File not found to collect: validation_error.yaml
+2022-05-20 18:36:23,524	File already exists: /var/loadtest/logs/2022-05-20_18-36-19.786623/pandora_config_hJf2kp.yaml
+2022-05-20 18:43:50,660	Failed to get info about ammo path
+2022-05-20 18:43:52,523	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./pandora1', '-expvar', '/var/loadtest/logs/2022-05-20_18-43-49.855324/pandora_config_hEfjMH.yaml']
+<traceback object at 0x403e5debd8>
+2022-05-20 18:43:53,765	File not found to collect: validation_error.yaml
+2022-05-20 18:43:53,769	File already exists: /var/loadtest/logs/2022-05-20_18-43-49.855324/pandora_dDwa3J.log
+2022-05-20 18:43:53,774	File already exists: /var/loadtest/logs/2022-05-20_18-43-49.855324/pandora_config_hEfjMH.yaml
+2022-05-21 06:04:58,384	Failed to get info about ammo path
+2022-05-21 06:04:59,973	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun1', '-expvar', '/var/loadtest/logs/2022-05-21_06-04-57.393054/pandora_config_RuW31t.yaml']
+<traceback object at 0x403de9cbd8>
+2022-05-21 06:05:01,385	File already exists: /var/loadtest/logs/2022-05-21_06-04-57.393054/pandora_config_RuW31t.yaml
+2022-05-21 06:05:01,398	File not found to collect: validation_error.yaml
+2022-05-21 06:05:01,408	File already exists: /var/loadtest/logs/2022-05-21_06-04-57.393054/pandora_J1acB7.log
+2022-05-21 06:39:32,743	There were errors:
+df: no file systems processed
+
+2022-05-21 06:39:32,747	Failed to get info about ammo path
+2022-05-21 06:39:33,677	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['gun1', '-expvar', '/var/loadtest/logs/2022-05-21_06-39-32.552869/pandora_config_VNYcqg.yaml']
+<traceback object at 0x7fdeb53d4b90>
+2022-05-21 06:39:34,993	Failed to collect file ./phout.log: [Errno 2] No such file or directory: '/var/loadtest/logs/2022-05-21_06-39-32.552869/phout.log'
+2022-05-21 06:39:34,995	File already exists: /var/loadtest/logs/2022-05-21_06-39-32.552869/pandora_config_VNYcqg.yaml
+2022-05-21 06:39:34,996	File not found to collect: validation_error.yaml
+2022-05-21 06:39:34,997	File already exists: /var/loadtest/logs/2022-05-21_06-39-32.552869/pandora_1c4EBF.log
+2022-05-21 06:40:46,952	There were errors:
+df: no file systems processed
+
+2022-05-21 06:40:46,956	Failed to get info about ammo path
+2022-05-21 06:40:47,629	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['../gun1', '-expvar', '/var/loadtest/logs/2022-05-21_06-40-46.758707/pandora_config_GSPyNm.yaml']
+<traceback object at 0x7f8a2317cb48>
+2022-05-21 06:40:48,997	Failed to collect file ./phout.log: [Errno 2] No such file or directory: '/var/loadtest/logs/2022-05-21_06-40-46.758707/phout.log'
+2022-05-21 06:40:48,998	File already exists: /var/loadtest/logs/2022-05-21_06-40-46.758707/pandora_config_GSPyNm.yaml
+2022-05-21 06:40:48,999	File not found to collect: validation_error.yaml
+2022-05-21 06:40:49,000	File already exists: /var/loadtest/logs/2022-05-21_06-40-46.758707/pandora_HqnP1Y.log
+2022-05-21 06:42:20,963	There were errors:
+df: no file systems processed
+
+2022-05-21 06:42:20,967	Failed to get info about ammo path
+2022-05-21 06:42:21,842	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['var/loadtest/gun1', '-expvar', '/var/loadtest/logs/2022-05-21_06-42-20.757917/pandora_config_NbKLpz.yaml']
+<traceback object at 0x7f1c2d733b90>
+2022-05-21 06:42:23,342	Failed to collect file ./phout.log: [Errno 2] No such file or directory: '/var/loadtest/logs/2022-05-21_06-42-20.757917/phout.log'
+2022-05-21 06:42:23,344	File already exists: /var/loadtest/logs/2022-05-21_06-42-20.757917/pandora_config_NbKLpz.yaml
+2022-05-21 06:42:23,345	File not found to collect: validation_error.yaml
+2022-05-21 06:42:23,345	File already exists: /var/loadtest/logs/2022-05-21_06-42-20.757917/pandora_F1KuJm.log
+2022-05-21 06:45:24,649	There were errors:
+df: no file systems processed
+
+2022-05-21 06:45:24,652	Failed to get info about ammo path
+2022-05-21 06:45:25,525	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/usr/bin/gun1', '-expvar', '/var/loadtest/logs/2022-05-21_06-45-24.446753/pandora_config_zU6JY3.yaml']
+<traceback object at 0x7fae840abb00>
+2022-05-21 06:45:27,093	Failed to collect file ./phout.log: [Errno 2] No such file or directory: '/var/loadtest/logs/2022-05-21_06-45-24.446753/phout.log'
+2022-05-21 06:45:27,094	File already exists: /var/loadtest/logs/2022-05-21_06-45-24.446753/pandora_config_zU6JY3.yaml
+2022-05-21 06:45:27,095	File already exists: /var/loadtest/logs/2022-05-21_06-45-24.446753/pandora_Lki8Ae.log
+2022-05-21 06:45:27,095	File not found to collect: validation_error.yaml
+2022-05-21 06:52:10,771	There were errors:
+df: no file systems processed
+
+2022-05-21 06:52:10,775	Failed to get info about ammo path
+2022-05-21 06:52:11,973	There were errors:
+df: no file systems processed
+
+2022-05-21 06:52:13,249	File already exists: /var/loadtest/logs/2022-05-21_06-52-10.572552/pandora_config_IvZXPK.yaml
+2022-05-21 06:52:13,252	Failed to collect file ./phout.log: [Errno 2] No such file or directory: '/var/loadtest/logs/2022-05-21_06-52-10.572552/phout.log'
+2022-05-21 06:52:13,253	File not found to collect: validation_error.yaml
+2022-05-21 06:52:13,255	File already exists: /var/loadtest/logs/2022-05-21_06-52-10.572552/pandora_AH0XrW.log
+2022-05-21 06:54:48,291	There were errors:
+df: no file systems processed
+
+2022-05-21 06:54:48,295	Failed to get info about ammo path
+2022-05-21 06:54:50,914	There were errors:
+df: no file systems processed
+
+2022-05-21 06:54:53,849	Interrupting
+2022-05-21 06:54:55,961	File already exists: /var/loadtest/logs/2022-05-21_06-54-48.102207/pandora_config_Eg8ykA.yaml
+2022-05-21 06:54:55,966	Failed to collect file ./phout.log: [Errno 2] No such file or directory: '/var/loadtest/logs/2022-05-21_06-54-48.102207/phout.log'
+2022-05-21 06:54:55,967	File not found to collect: validation_error.yaml
+2022-05-21 06:54:55,968	File already exists: /var/loadtest/logs/2022-05-21_06-54-48.102207/pandora__7HDdK.log
+2022-05-21 07:02:56,637	There were errors:
+df: no file systems processed
+
+2022-05-21 07:02:56,640	Failed to get info about ammo path
+2022-05-21 07:02:56,641	Overload API token filename is not defined
+2022-05-21 07:02:56,642	Exception occurred:
+<type 'exceptions.RuntimeError'>: API token error
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 377, in run
+    self.core.plugins_prepare_test()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 254, in plugins_prepare_test
+    plugin.prepare_test()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/plugin.py", line 239, in prepare_test
+    lp_job = self.lp_job
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/plugin.py", line 553, in lp_job
+    self._lp_job = self.__get_lp_job()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/plugin.py", line 569, in __get_lp_job
+    api_client = self.__get_api_client()
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/plugin.py", line 529, in __get_api_client
+    self._api_token = self.read_token(self.get_option("token_file"))
+
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/plugins/DataUploader/plugin.py", line 638, in read_token
+    raise RuntimeError("API token error")
+
+2022-05-21 07:02:56,646	Job number is not available yet
+2022-05-21 07:02:56,647	Job number is not available yet
+2022-05-21 07:02:56,654	File already exists: /var/loadtest/logs/2022-05-21_07-02-56.439317/pandora_config_vYOJh_.yaml
+2022-05-21 07:02:56,655	File not found to collect: validation_error.yaml
+2022-05-21 07:04:00,056	There were errors:
+df: no file systems processed
+
+2022-05-21 07:04:00,061	Failed to get info about ammo path
+2022-05-21 07:04:01,313	There were errors:
+df: no file systems processed
+
+2022-05-21 07:04:02,205	Interrupting
+2022-05-21 07:04:04,590	Failed to collect file ./phout.log: [Errno 2] No such file or directory: '/var/loadtest/logs/2022-05-21_07-03-59.861819/phout.log'
+2022-05-21 07:04:04,592	File already exists: /var/loadtest/logs/2022-05-21_07-03-59.861819/pandora_config_nrAWon.yaml
+2022-05-21 07:04:04,597	File not found to collect: validation_error.yaml
+2022-05-21 07:04:04,598	File already exists: /var/loadtest/logs/2022-05-21_07-03-59.861819/pandora_54eOA1.log
+2022-05-21 07:08:25,578	Failed to get info about ammo path
+2022-05-21 07:08:27,488	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun12', '-expvar', '/var/loadtest/logs/2022-05-21_07-08-24.675004/pandora_config_LHMIL9.yaml']
+<traceback object at 0x403dea2c68>
+2022-05-21 07:08:28,967	File already exists: /var/loadtest/logs/2022-05-21_07-08-24.675004/pandora_config_LHMIL9.yaml
+2022-05-21 07:08:28,972	File not found to collect: validation_error.yaml
+2022-05-21 07:08:28,976	File already exists: /var/loadtest/logs/2022-05-21_07-08-24.675004/pandora_7_7smB.log
+2022-05-21 07:12:37,705	Failed to get info about ammo path
+2022-05-21 07:12:39,425	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun12', '-expvar', '/var/loadtest/logs/2022-05-21_07-12-36.901339/pandora_config_8lb6ud.yaml']
+<traceback object at 0x403e0a2d40>
+2022-05-21 07:12:40,779	File already exists: /var/loadtest/logs/2022-05-21_07-12-36.901339/pandora_config_8lb6ud.yaml
+2022-05-21 07:12:40,784	File not found to collect: validation_error.yaml
+2022-05-21 07:12:40,787	File already exists: /var/loadtest/logs/2022-05-21_07-12-36.901339/pandora_98juik.log
+2022-05-21 07:13:20,048	Failed to get info about ammo path
+2022-05-21 07:13:21,525	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun12', '-expvar', '/var/loadtest/logs/2022-05-21_07-13-19.249854/pandora_config_Ymhppf.yaml']
+<traceback object at 0x403de9d908>
+2022-05-21 07:13:22,830	File already exists: /var/loadtest/logs/2022-05-21_07-13-19.249854/pandora_config_Ymhppf.yaml
+2022-05-21 07:13:22,836	File not found to collect: validation_error.yaml
+2022-05-21 07:13:22,844	File already exists: /var/loadtest/logs/2022-05-21_07-13-19.249854/pandora_b_q1R9.log
+2022-05-21 07:14:06,468	Failed to get info about ammo path
+2022-05-21 07:14:07,712	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun12', '-expvar', '/var/loadtest/logs/2022-05-21_07-14-05.683035/pandora_config_lA4ksH.yaml']
+<traceback object at 0x403de9d908>
+2022-05-21 07:14:08,884	File already exists: /var/loadtest/logs/2022-05-21_07-14-05.683035/pandora_herA84.log
+2022-05-21 07:14:08,888	File already exists: /var/loadtest/logs/2022-05-21_07-14-05.683035/pandora_config_lA4ksH.yaml
+2022-05-21 07:14:08,893	File not found to collect: validation_error.yaml
+2022-05-21 07:15:08,327	Failed to get info about ammo path
+2022-05-21 07:15:09,897	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun12', '-expvar', '/var/loadtest/logs/2022-05-21_07-15-07.531566/pandora_config_gb9MdE.yaml']
+<traceback object at 0x403de9d950>
+2022-05-21 07:15:11,754	File already exists: /var/loadtest/logs/2022-05-21_07-15-07.531566/pandora_config_gb9MdE.yaml
+2022-05-21 07:15:11,758	File not found to collect: validation_error.yaml
+2022-05-21 07:15:11,764	File already exists: /var/loadtest/logs/2022-05-21_07-15-07.531566/pandora_NSs69s.log
+2022-05-21 07:20:28,286	Failed to get info about ammo path
+2022-05-21 07:20:29,776	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun12', '-expvar', '/var/loadtest/logs/2022-05-21_07-20-27.496492/pandora_config_weoDGu.yaml']
+<traceback object at 0x403de9d998>
+2022-05-21 07:20:31,015	File already exists: /var/loadtest/logs/2022-05-21_07-20-27.496492/pandora_WWjY6y.log
+2022-05-21 07:20:31,024	File not found to collect: validation_error.yaml
+2022-05-21 07:20:31,030	File already exists: /var/loadtest/logs/2022-05-21_07-20-27.496492/pandora_config_weoDGu.yaml
+2022-05-21 07:21:06,608	Failed to get info about ammo path
+2022-05-21 07:21:08,039	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun12', '-expvar', '/var/loadtest/logs/2022-05-21_07-21-05.820747/pandora_config_ZVKzm6.yaml']
+<traceback object at 0x403e0a3cf8>
+2022-05-21 07:21:09,371	File already exists: /var/loadtest/logs/2022-05-21_07-21-05.820747/pandora_Xno68h.log
+2022-05-21 07:21:09,378	File not found to collect: validation_error.yaml
+2022-05-21 07:21:09,385	File already exists: /var/loadtest/logs/2022-05-21_07-21-05.820747/pandora_config_ZVKzm6.yaml
+2022-05-21 07:22:22,081	Failed to get info about ammo path
+2022-05-21 07:22:23,450	Test interrupted:
+<type 'exceptions.RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['./gun12', '-expvar', '/var/loadtest/logs/2022-05-21_07-22-21.269306/pandora_config_C_XMU5.yaml']
+<traceback object at 0x403e723c68>
+2022-05-21 07:22:24,752	File already exists: /var/loadtest/logs/2022-05-21_07-22-21.269306/pandora_config_C_XMU5.yaml
+2022-05-21 07:22:24,763	File not found to collect: validation_error.yaml
+2022-05-21 07:22:24,767	File already exists: /var/loadtest/logs/2022-05-21_07-22-21.269306/pandora_28d1if.log
+2022-05-21 10:28:07,649	Failed to get info about ammo path
+2022-05-21 10:28:28,371	Interrupting
+2022-05-21 10:28:31,024	File already exists: /var/loadtest/logs/2022-05-21_10-28-06.857379/pandora_config_5xXvSC.yaml
+2022-05-21 10:28:31,030	File not found to collect: validation_error.yaml
+2022-05-21 10:28:31,034	File already exists: /var/loadtest/logs/2022-05-21_10-28-06.857379/pandora_LxnCPx.log
+2022-05-21 10:36:43,785	Failed to get info about ammo path
+2022-05-21 10:37:50,219	File already exists: /var/loadtest/logs/2022-05-21_10-36-42.826559/pandora_hC54Lk.log
+2022-05-21 10:37:50,226	File not found to collect: validation_error.yaml
+2022-05-21 10:37:50,230	File already exists: /var/loadtest/logs/2022-05-21_10-36-42.826559/pandora_config_h_9hQB.yaml
+2022-05-21 11:05:16,026	Failed to get info about ammo path
+2022-05-21 11:08:22,547	File already exists: /var/loadtest/logs/2022-05-21_11-05-15.205085/pandora_config_l9bq_g.yaml
+2022-05-21 11:08:22,554	File not found to collect: validation_error.yaml
+2022-05-21 11:08:22,575	File already exists: /var/loadtest/logs/2022-05-21_11-05-15.205085/pandora_3rGeq1.log
+2022-05-21 11:12:26,318	Failed to get info about ammo path
+2022-05-21 11:12:46,956	Interrupting
+2022-05-21 11:12:50,453	File already exists: /var/loadtest/logs/2022-05-21_11-12-25.476265/pandora_Watw3w.log
+2022-05-21 11:12:50,459	File not found to collect: validation_error.yaml
+2022-05-21 11:12:50,469	File already exists: /var/loadtest/logs/2022-05-21_11-12-25.476265/pandora_config_TUMFkr.yaml
+2022-05-21 12:16:04,688	Failed to get info about ammo path
+2022-05-21 12:16:25,274	Interrupting
+2022-05-21 12:16:28,504	File already exists: /var/loadtest/logs/2022-05-21_12-16-03.855101/pandora_xMF4uG.log
+2022-05-21 12:16:28,513	File already exists: /var/loadtest/logs/2022-05-21_12-16-03.855101/pandora_config__gDwPa.yaml
+2022-05-21 12:16:28,517	File not found to collect: validation_error.yaml
+2022-05-21 12:19:03,225	Failed to get info about ammo path
+2022-05-21 12:19:25,924	Interrupting
+2022-05-21 12:19:28,987	File not found to collect: validation_error.yaml
+2022-05-21 12:19:28,995	File already exists: /var/loadtest/logs/2022-05-21_12-19-02.356858/pandora_config_1NAyNi.yaml
+2022-05-21 12:19:29,001	File already exists: /var/loadtest/logs/2022-05-21_12-19-02.356858/pandora_XaV_Ta.log
+2022-05-21 12:19:43,321	Failed to get info about ammo path
+2022-05-21 12:19:54,848	Interrupting
+2022-05-21 12:19:57,905	File already exists: /var/loadtest/logs/2022-05-21_12-19-42.474769/pandora_config_Qx2sDQ.yaml
+2022-05-21 12:19:57,923	File not found to collect: validation_error.yaml
+2022-05-21 12:19:57,928	File already exists: /var/loadtest/logs/2022-05-21_12-19-42.474769/pandora_CKG0WO.log
+2022-05-21 12:23:21,793	Failed to get info about ammo path
+2022-05-21 12:26:26,744	File already exists: /var/loadtest/logs/2022-05-21_12-23-20.929656/pandora_Xt8P1x.log
+2022-05-21 12:26:26,752	File already exists: /var/loadtest/logs/2022-05-21_12-23-20.929656/pandora_config_nkMPjw.yaml
+2022-05-21 12:26:26,760	File not found to collect: validation_error.yaml
+2022-05-21 12:29:59,272	Failed to get info about ammo path
+2022-05-21 12:30:18,689	Interrupting
+2022-05-21 12:30:22,152	File already exists: /var/loadtest/logs/2022-05-21_12-29-58.184050/pandora_config_heZ_nC.yaml
+2022-05-21 12:30:22,166	File not found to collect: validation_error.yaml
+2022-05-21 12:30:22,170	File already exists: /var/loadtest/logs/2022-05-21_12-29-58.184050/pandora_ohqGun.log
+2022-05-21 12:31:59,025	Failed to get info about ammo path
+2022-05-21 12:32:19,073	Interrupting
+2022-05-21 12:32:19,125	Terminating worker process with PID 44
+2022-05-21 12:32:22,132	File already exists: /var/loadtest/logs/2022-05-21_12-31-58.172559/pandora_config_L_7YrA.yaml
+2022-05-21 12:32:22,150	File not found to collect: validation_error.yaml
+2022-05-21 12:32:22,157	File already exists: /var/loadtest/logs/2022-05-21_12-31-58.172559/pandora_O_xL3Q.log
+2022-05-21 12:32:31,547	Failed to get info about ammo path
+2022-05-21 12:36:07,226	Interrupting
+2022-05-21 12:36:10,720	File already exists: /var/loadtest/logs/2022-05-21_12-32-30.675684/pandora_1xKd5R.log
+2022-05-21 12:36:10,727	File not found to collect: validation_error.yaml
+2022-05-21 12:36:10,732	File already exists: /var/loadtest/logs/2022-05-21_12-32-30.675684/pandora_config_mqW76j.yaml
+2022-05-21 12:37:17,888	Failed to get info about ammo path
+2022-05-21 12:41:09,421	File already exists: /var/loadtest/logs/2022-05-21_12-37-16.990367/pandora_config_Erxngd.yaml
+2022-05-21 12:41:09,427	File not found to collect: validation_error.yaml
+2022-05-21 12:41:09,432	File already exists: /var/loadtest/logs/2022-05-21_12-37-16.990367/pandora_uRyL5j.log
+2022-05-21 13:09:34,401	Failed to get info about ammo path
+2022-05-21 13:10:59,824	Interrupting
+2022-05-21 13:11:02,743	File already exists: /var/loadtest/logs/2022-05-21_13-09-33.517422/pandora_config_90cywF.yaml
+2022-05-21 13:11:02,800	File not found to collect: validation_error.yaml
+2022-05-21 13:11:02,813	File already exists: /var/loadtest/logs/2022-05-21_13-09-33.517422/pandora_bXeWxA.log
+2022-05-21 13:16:01,099	Failed to get info about ammo path
+2022-05-21 13:20:13,039	File already exists: /var/loadtest/logs/2022-05-21_13-16-00.063143/pandora_wXPR4D.log
+2022-05-21 13:20:13,052	File not found to collect: validation_error.yaml
+2022-05-21 13:20:13,066	File already exists: /var/loadtest/logs/2022-05-21_13-16-00.063143/pandora_config_K76DVK.yaml
+2022-05-21 13:50:08,242	Failed to get info about ammo path
+2022-05-21 13:57:36,552	Sparkline got outdated second 1653141034, oldest in list 1653141153
+2022-05-21 13:57:36,562	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,565	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,568	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,571	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,577	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,597	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,604	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,608	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,611	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,615	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,620	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,623	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,628	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,632	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,636	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,641	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,645	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,652	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,655	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,659	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,663	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,667	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,671	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,674	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,678	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,681	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,685	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,688	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:57:36,692	Sparkline got outdated second 1653141034, oldest in list 1653141213
+2022-05-21 13:58:12,708	File already exists: /var/loadtest/logs/2022-05-21_13-50-06.508901/pandora_config_mX05Bn.yaml
+2022-05-21 13:58:12,729	File already exists: /var/loadtest/logs/2022-05-21_13-50-06.508901/pandora_zFukMw.log
+2022-05-21 13:58:12,735	File not found to collect: validation_error.yaml
+2022-05-21 14:32:21,538	Failed to get info about ammo path
+2022-05-21 14:40:03,329	Interrupting
+2022-05-21 14:42:22,679	File already exists: /var/loadtest/logs/2022-05-21_14-32-20.587824/pandora_MdMhp0.log
+2022-05-21 14:42:22,690	File not found to collect: validation_error.yaml
+2022-05-21 14:42:22,695	File already exists: /var/loadtest/logs/2022-05-21_14-32-20.587824/pandora_config_WA3C_E.yaml
+2022-05-21 14:43:45,431	Failed to get info about ammo path
+2022-05-21 14:45:14,994	Interrupting
+2022-05-21 14:45:39,659	File already exists: /var/loadtest/logs/2022-05-21_14-43-44.401313/pandora_jUh1Ug.log
+2022-05-21 14:45:39,684	File not found to collect: validation_error.yaml
+2022-05-21 14:45:39,690	File already exists: /var/loadtest/logs/2022-05-21_14-43-44.401313/pandora_config_ZLhL1v.yaml

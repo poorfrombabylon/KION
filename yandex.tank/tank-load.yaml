@@ -1,0 +1,18 @@
+overload:
+  enabled: true
+  package: yandextank.plugins.DataUploader
+  token_file: "token.txt"
+pandora:
+  enabled: true
+  package: yandextank.plugins.Pandora
+  config_file: load.yaml
+  pandora_cmd: ./gun2
+phantom:
+  enabled: false
+autostop:
+  autostop:
+    - http(5xx,10%,5s)
+console:
+  enabled: true
+telegraf:
+  enabled: false
