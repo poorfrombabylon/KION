@@ -20,8 +20,30 @@ const createTableQuery = `
 		EventTime DateTime('Europe/London')
 	)
 
-	ENGINE = ReplacingMergeTree()
+	ENGINE = MergeTree()
 	ORDER BY EventTime;
+`
+
+const createKafkaTableQuery = `
+	CREATE TABLE IF NOT EXISTS KION_queue
+	(
+		VideoId UUID,
+		UserId UUID,
+		EventType String,
+		EventDuration Int,
+		EventTime DateTime('Europe/London')
+	)
+	ENGINE = Kafka
+	SETTINGS kafka_broker_list = '10.244.0.6:9092',
+       		 kafka_topic_list = 'test',
+       		 kafka_group_name = 'test',
+       		 kafka_format = 'JSONEachRow';
+`
+
+const createMaterializedViewQuery = `
+	CREATE MATERIALIZED VIEW IF NOT EXISTS KION_consumer TO KION AS
+	SELECT VideoId, UserId, EventType, EventDuration, EventTime
+	FROM KION_queue;
 `
 
 type RecordStorage struct {
@@ -37,7 +59,7 @@ func NewRecordStorage() Storage {
 	var (
 		ctx     = context.Background()
 		db, err = ch.Open(&ch.Options{
-			Addr: []string{"212.23.220.55:9000"},
+			Addr: []string{"10.244.0.5:9000"},
 			Auth: ch.Auth{
 				Database: "default",
 				Username: "clickhouse_operator",
@@ -52,11 +74,16 @@ func NewRecordStorage() Storage {
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = db.Ping(ctx)
-	if err != nil {
+	if err := db.Ping(ctx); err != nil {
 		log.Fatal(err)
 	}
 	if err := db.Exec(ctx, createTableQuery); err != nil {
+		log.Fatal(err)
+	}
+	if err := db.Exec(ctx, createKafkaTableQuery); err != nil {
+		log.Fatal(err)
+	}
+	if err := db.Exec(ctx, createMaterializedViewQuery); err != nil {
 		log.Fatal(err)
 	}
 	return &RecordStorage{db: db}
