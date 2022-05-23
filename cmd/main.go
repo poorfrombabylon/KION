@@ -40,7 +40,6 @@ func main() {
 
 	fmt.Println("starting server at localhost:8082")
 	initGrpcServer(ctx)
-
 }
 
 func initGrpcServer(ctx context.Context) error {
@@ -78,3 +77,25 @@ func initHttpServer() {
 	http.Handle("/metrics", promhttp.Handler())
 	http.ListenAndServe(":8888", nil)
 }
+
+//func initKafkaServer(ctx context.Context) error {
+//	conn, err := kafka.DialLeader(ctx, "tcp", "10.244.0.6:9092", "lolkek", 0)
+//	if err != nil {
+//		return err
+//	}
+//
+//	conn.SetWriteDeadline(time.Now().Add(time.Second * 8))
+//	conn.WriteMessages(kafka.Message{
+//		Topic: "test",
+//		Value: []byte("pidor"),
+//	})
+//
+//	group, ctx := errgroup.WithContext(ctx)
+//
+//	group.Go(func() error {
+//		<-ctx.Done()
+//		return nil
+//	})
+//
+//	return group.Wait()
+//}

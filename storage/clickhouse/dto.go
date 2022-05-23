@@ -1,13 +1,27 @@
 package clickhouse
 
 import (
-	"github.com/google/uuid"
+	"KION/domain"
 	"time"
 )
 
-type RecordDb struct {
-	video_id   uuid.UUID `db:"video_id"`
-	user_id    uuid.UUID `db:"user_id"`
-	event_type string    `db:"event_type"`
-	time       time.Time `db:"time"`
+type ModelDTO struct {
+	VideoID   string
+	UserID    string
+	VideoTime time.Duration
+	EventType string
+	CreatedAt time.Time
+}
+
+func transformModel(model domain.Model) ModelDTO {
+
+	newModel := ModelDTO{
+		VideoID:   model.GetVideoID().String(),
+		UserID:    model.GetUserID().String(),
+		VideoTime: model.GetVideoTime(),
+		EventType: model.GetEvent(),
+		CreatedAt: model.GetCreatedAt(),
+	}
+
+	return newModel
 }
