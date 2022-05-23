@@ -6,7 +6,7 @@ pandora:
   enabled: true
   package: yandextank.plugins.Pandora
   config_file: load.yaml
-  pandora_cmd: ./gun2
+  pandora_cmd: ./gun_write
 phantom:
   enabled: false
 autostop:

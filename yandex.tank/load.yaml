@@ -14,10 +14,10 @@ pools:
 
     rps:                             # shooting schedule
       type: line                     # linear growth
-      from: 900                        # from 1 response per second
+      from: 1                        # from 1 response per second
       to: 1000                          # to 5 responses per second
-      duration: 60s                  # for 60 seconds
+      duration: 300s                  # for 60 seconds
 
     startup:                         # instances startup schedule
       type: once                     # start 10 instances
-      times: 10
+      times: 200

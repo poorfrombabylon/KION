@@ -858,3 +858,30 @@ df: no file systems processed
 2022-05-21 14:45:39,659	File already exists: /var/loadtest/logs/2022-05-21_14-43-44.401313/pandora_jUh1Ug.log
 2022-05-21 14:45:39,684	File not found to collect: validation_error.yaml
 2022-05-21 14:45:39,690	File already exists: /var/loadtest/logs/2022-05-21_14-43-44.401313/pandora_config_ZLhL1v.yaml
+2022-05-23 22:13:07,013	Failed to get info about ammo path
+2022-05-23 22:13:43,344	Interrupting
+2022-05-23 22:13:56,196	File already exists: /var/loadtest/logs/2022-05-23_22-13-06.022493/pandora_K1pjfl.log
+2022-05-23 22:13:56,212	File not found to collect: validation_error.yaml
+2022-05-23 22:13:56,216	File already exists: /var/loadtest/logs/2022-05-23_22-13-06.022493/pandora_config_MXvrNd.yaml
+2022-05-23 22:15:59,129	Failed to get info about ammo path
+2022-05-23 22:16:02,534	Interrupting
+2022-05-23 22:16:02,617	Test interrupted:
+<type 'exceptions.KeyboardInterrupt'>: 
+<traceback object at 0x4057611638>
+2022-05-23 22:16:05,518	File already exists: /var/loadtest/logs/2022-05-23_22-15-57.932185/pandora_la1Qns.log
+2022-05-23 22:16:05,523	File not found to collect: validation_error.yaml
+2022-05-23 22:16:05,530	File already exists: /var/loadtest/logs/2022-05-23_22-15-57.932185/pandora_config_WUM_qG.yaml
+2022-05-23 22:16:32,984	Failed to get info about ammo path
+2022-05-23 22:17:12,948	Interrupting
+2022-05-23 22:17:31,270	File already exists: /var/loadtest/logs/2022-05-23_22-16-32.091356/pandora_config_0JNK0L.yaml
+2022-05-23 22:17:31,307	File not found to collect: validation_error.yaml
+2022-05-23 22:17:31,335	File already exists: /var/loadtest/logs/2022-05-23_22-16-32.091356/pandora_5MlBza.log
+2022-05-23 22:17:55,452	Failed to get info about ammo path
+2022-05-23 22:20:44,630	Interrupting
+2022-05-23 22:21:36,646	File already exists: /var/loadtest/logs/2022-05-23_22-17-54.307629/pandora_config_rA0vHk.yaml
+2022-05-23 22:21:36,663	File not found to collect: validation_error.yaml
+2022-05-23 22:21:36,667	File already exists: /var/loadtest/logs/2022-05-23_22-17-54.307629/pandora_YrwCDB.log
+2022-05-23 22:21:44,596	Failed to get info about ammo path
+2022-05-23 22:34:10,637	File not found to collect: validation_error.yaml
+2022-05-23 22:34:10,668	File already exists: /var/loadtest/logs/2022-05-23_22-21-43.477214/pandora_yCYpoJ.log
+2022-05-23 22:34:10,678	File already exists: /var/loadtest/logs/2022-05-23_22-21-43.477214/pandora_config_m472Ym.yaml
