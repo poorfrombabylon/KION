@@ -48,14 +48,14 @@ func (c controller) CreateRecord(
 	videoTime := request.GetTime().AsDuration()
 	eventType := request.GetEventType()
 
-	newRecord := domain.NewModel(
+	record := domain.NewModel(
 		videoID,
 		userID,
 		videoTime,
 		eventType,
 	)
 
-	err = c.recordService.CreateRecord(ctx, newRecord)
+	err = c.recordService.CreateRecord(ctx, record)
 
 	var state string
 	if err == nil {

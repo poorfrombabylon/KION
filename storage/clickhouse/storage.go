@@ -3,7 +3,9 @@ package clickhouse
 import (
 	"KION/domain"
 	"context"
+	"encoding/json"
 	"fmt"
+	"github.com/segmentio/kafka-go"
 	"log"
 	"time"
 
@@ -37,7 +39,7 @@ func NewRecordStorage() Storage {
 	var (
 		ctx     = context.Background()
 		db, err = ch.Open(&ch.Options{
-			Addr: []string{"212.23.220.55:9000"},
+			Addr: []string{"10.244.0.5:9000"},
 			Auth: ch.Auth{
 				Database: "default",
 				Username: "clickhouse_operator",
@@ -65,16 +67,23 @@ func NewRecordStorage() Storage {
 func (r *RecordStorage) CreateRecord(ctx context.Context, model domain.Model) error {
 	fmt.Println("Storage CreateRecord")
 
-	query := fmt.Sprintf(`
-		INSERT INTO KION (VideoId, UserId, EventType, EventDuration, EventTime)
-		VALUES ('%s', '%s', '%s', %v, %v);
-	`, model.GetVideoID().String(), model.GetUserID().String(), model.GetEvent(), int(model.GetVideoTime().Seconds()), model.GetCreatedAt().Unix())
+	data := transformModel(model)
 
-	err := r.db.Exec(ctx, query)
+	jsonToKafka, err := json.Marshal(data)
 	if err != nil {
-		fmt.Println(err.Error())
 		return err
 	}
+
+	conn, err := kafka.DialLeader(context.Background(), "tcp", "10.244.0.6:9092", "kion-event-topic", 0)
+	if err != nil {
+		return err
+	}
+
+	conn.SetWriteDeadline(time.Now().Add(time.Second * 8))
+	conn.WriteMessages(kafka.Message{
+		Topic: "kion-event-topic",
+		Value: jsonToKafka,
+	})
 
 	return nil
 }
