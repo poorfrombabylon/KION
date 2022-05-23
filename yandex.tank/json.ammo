@@ -3,299 +3,299 @@
     "UserId" : "57fd718a-fb99-4314-a880-0e02139b4f38",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 75,
-    "EventTime" : "2022-05-21 14:16:06.000 +0100"
+    "EventTime" : "2022-05-21 14:16:06"
 }
 {
     "VideoId" : "fc2053e9-5909-4be3-9142-8de512572222",
     "UserId" : "598ceebe-5fe8-4486-8c02-3b23706658b8",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 75,
-    "EventTime" : "2022-05-21 14:16:06.000 +0100"
+    "EventTime" : "2022-05-21 14:16:06"
 }
 {
     "VideoId" : "5b5a8590-dfaf-4a49-9121-00880f0f9bb7",
     "UserId" : "d293e706-e399-46ce-9608-a7bdfa90664a",
     "EventType" : "EXIT_VIDEO_EVENT",
     "EventDuration" : 77,
-    "EventTime" : "2022-05-21 14:16:07.000 +0100"
+    "EventTime" : "2022-05-21 14:16:07"
 }
 {
     "VideoId" : "abafee4b-441e-43b3-a209-b5bddb800e6d",
     "UserId" : "4eb6a6df-8a97-42aa-93d7-c78892e031fc",
     "EventType" : "EXIT_VIDEO_EVENT",
     "EventDuration" : 77,
-    "EventTime" : "2022-05-21 14:16:07.000 +0100"
+    "EventTime" : "2022-05-21 14:16:07"
 }
 {
     "VideoId" : "9fade481-477c-4c3f-9b0f-01ac7ee478b1",
     "UserId" : "47bb2e8e-910b-4a17-b9fd-ff9bc178bd7a",
     "EventType" : "EXIT_VIDEO_EVENT",
     "EventDuration" : 77,
-    "EventTime" : "2022-05-21 14:16:07.000 +0100"
+    "EventTime" : "2022-05-21 14:16:07"
 }
 {
     "VideoId" : "d18c8e2e-5008-4022-8503-610f25cd76b6",
     "UserId" : "902ed513-4369-4d10-bc10-063a8fb89e8e",
     "EventType" : "EXIT_VIDEO_EVENT",
     "EventDuration" : 77,
-    "EventTime" : "2022-05-21 14:16:07.000 +0100"
+    "EventTime" : "2022-05-21 14:16:07"
 }
 {
     "VideoId" : "54662052-581c-40f8-b5f5-54267084c6b1",
     "UserId" : "cf334532-70e7-4989-bec6-5f0c5f197937",
     "EventType" : "EXIT_VIDEO_EVENT",
     "EventDuration" : 77,
-    "EventTime" : "2022-05-21 14:16:07.000 +0100"
+    "EventTime" : "2022-05-21 14:16:07"
 }
 {
     "VideoId" : "cdc437cb-9834-4a62-b7d8-92da7b307a7a",
     "UserId" : "4b6ed2f4-4987-4fa2-a3e1-6343f5a335ac",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 66,
-    "EventTime" : "2022-05-21 14:16:08.000 +0100"
+    "EventTime" : "2022-05-21 14:16:08"
 }
 {
     "VideoId" : "90c38feb-b028-44e3-98c2-4f65952a449b",
     "UserId" : "edf62ae8-f8ca-456b-aede-2f8eb80cd12f",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 66,
-    "EventTime" : "2022-05-21 14:16:08.000 +0100"
+    "EventTime" : "2022-05-21 14:16:08"
 }
 {
     "VideoId" : "d57556d9-fb35-4e19-80b4-4832e8ed5b70",
     "UserId" : "58243fed-d21a-457c-9982-88bf90256c62",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 66,
-    "EventTime" : "2022-05-21 14:16:08.000 +0100"
+    "EventTime" : "2022-05-21 14:16:08"
 }
 {
     "VideoId" : "511a4e94-539e-4ac7-a745-579ec76cc966",
     "UserId" : "043ae9ce-4b23-4216-91ee-f1b3a7515355",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 66,
-    "EventTime" : "2022-05-21 14:16:08.000 +0100"
+    "EventTime" : "2022-05-21 14:16:08"
 }
 {
     "VideoId" : "9bf42a6e-dc25-49f8-93d2-30172b1fe34a",
     "UserId" : "d992bd8e-39ee-4822-818a-7dd57d66dd8b",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 66,
-    "EventTime" : "2022-05-21 14:16:08.000 +0100"
+    "EventTime" : "2022-05-21 14:16:08"
 }
 {
     "VideoId" : "68f82fd0-95b0-4c30-aaab-8829298dbdf4",
     "UserId" : "f0cebea6-be3b-4105-9b61-6bb3e126158c",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 66,
-    "EventTime" : "2022-05-21 14:16:08.000 +0100"
+    "EventTime" : "2022-05-21 14:16:08"
 }
 {
     "VideoId" : "2b90ffcb-643a-455c-ada2-e4f9094e87bc",
     "UserId" : "ceb147d0-effd-4fea-8f62-45e964abf6d0",
     "EventType" : "FORWARD_VIDEO_EVENT",
     "EventDuration" : 44,
-    "EventTime" : "2022-05-21 14:16:09.000 +0100"
+    "EventTime" : "2022-05-21 14:16:09"
 }
 {
     "VideoId" : "c696c55a-727e-4ce3-8e58-c18491f89585",
     "UserId" : "23582737-0437-4337-9ed3-f21bcef08856",
     "EventType" : "FORWARD_VIDEO_EVENT",
     "EventDuration" : 44,
-    "EventTime" : "2022-05-21 14:16:09.000 +0100"
+    "EventTime" : "2022-05-21 14:16:09"
 }
 {
     "VideoId" : "a0287f3f-fbd6-474e-81f2-7effe370e698",
     "UserId" : "920495be-116c-41cc-8420-e5890809df77",
     "EventType" : "FORWARD_VIDEO_EVENT",
     "EventDuration" : 44,
-    "EventTime" : "2022-05-21 14:16:09.000 +0100"
+    "EventTime" : "2022-05-21 14:16:09"
 }
 {
     "VideoId" : "ebfe95e2-cff2-4933-b912-41bcc0095f91",
     "UserId" : "4965d308-f5df-4f98-9049-0caea8bf7186",
     "EventType" : "FORWARD_VIDEO_EVENT",
     "EventDuration" : 44,
-    "EventTime" : "2022-05-21 14:16:09.000 +0100"
+    "EventTime" : "2022-05-21 14:16:09"
 }
 {
     "VideoId" : "8b2e7243-3813-47be-871f-f009b5432ad1",
     "UserId" : "48ccaf42-565f-4f7d-a9a7-a30c93e6a26b",
     "EventType" : "FORWARD_VIDEO_EVENT",
     "EventDuration" : 44,
-    "EventTime" : "2022-05-21 14:16:09.000 +0100"
+    "EventTime" : "2022-05-21 14:16:09"
 }
 {
     "VideoId" : "bfd24edf-e030-4a7b-91b4-be38fcf0130c",
     "UserId" : "55838be1-e152-469f-beda-e830ff7a4152",
     "EventType" : "FORWARD_VIDEO_EVENT",
     "EventDuration" : 44,
-    "EventTime" : "2022-05-21 14:16:09.000 +0100"
+    "EventTime" : "2022-05-21 14:16:09"
 }
 {
     "VideoId" : "bd6cc160-5e62-497b-bf1e-768589ac3cf1",
     "UserId" : "7773e273-4034-4384-8d54-564dfac33984",
     "EventType" : "FORWARD_VIDEO_EVENT",
     "EventDuration" : 44,
-    "EventTime" : "2022-05-21 14:16:09.000 +0100"
+    "EventTime" : "2022-05-21 14:16:09"
 }
 {
     "VideoId" : "b8654e2e-406d-48f8-b93e-dac71cea6fd6",
     "UserId" : "5d7d00f6-4a0d-4c4b-be71-edeb03e2eec5",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 98,
-    "EventTime" : "2022-05-21 14:16:10.000 +0100"
+    "EventTime" : "2022-05-21 14:16:10"
 }
 {
     "VideoId" : "f91a1e56-4a9b-4519-a62c-688ada766260",
     "UserId" : "ace933cb-6c70-4a92-b580-4268657ef982",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 98,
-    "EventTime" : "2022-05-21 14:16:10.000 +0100"
+    "EventTime" : "2022-05-21 14:16:10"
 }
 {
     "VideoId" : "d1a2b915-86b3-46bc-a495-263d4d0fdc7e",
     "UserId" : "6662953a-38a6-476f-b3f0-8c3417d7ec8f",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 98,
-    "EventTime" : "2022-05-21 14:16:10.000 +0100"
+    "EventTime" : "2022-05-21 14:16:10"
 }
 {
     "VideoId" : "7aac212e-c015-4bfc-93ef-0c17491527d2",
     "UserId" : "00f513c8-5391-43ac-8e10-1757dca82a0c",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 98,
-    "EventTime" : "2022-05-21 14:16:10.000 +0100"
+    "EventTime" : "2022-05-21 14:16:10"
 }
 {
     "VideoId" : "980b734a-55ca-4129-bb18-b350d90b2a13",
     "UserId" : "fe526a14-9e44-4893-a5fa-15b40d6973a6",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 98,
-    "EventTime" : "2022-05-21 14:16:10.000 +0100"
+    "EventTime" : "2022-05-21 14:16:10"
 }
 {
     "VideoId" : "db6f5a8c-0722-4fdb-95aa-6dbe951a4f0f",
     "UserId" : "a9c17221-726b-4499-9962-c7e35b3262f5",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 98,
-    "EventTime" : "2022-05-21 14:16:10.000 +0100"
+    "EventTime" : "2022-05-21 14:16:10"
 }
 {
     "VideoId" : "a3e50cd2-26ce-46f3-be7b-183bbe096063",
     "UserId" : "52ebcff4-e0c1-400c-90db-046e36cbadb4",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 98,
-    "EventTime" : "2022-05-21 14:16:10.000 +0100"
+    "EventTime" : "2022-05-21 14:16:10"
 }
 {
     "VideoId" : "8c6292b2-811e-453a-a095-c857655a1625",
     "UserId" : "176ed541-4f13-456a-9494-a65bd8799601",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 98,
-    "EventTime" : "2022-05-21 14:16:10.000 +0100"
+    "EventTime" : "2022-05-21 14:16:10"
 }
 {
     "VideoId" : "6bd508d7-9ecf-4d9c-b4ef-7dbf128b75f1",
     "UserId" : "22bb46a9-a540-4edf-bfe7-e63cf48123e9",
     "EventType" : "REVERT_VIDEO_EVENT",
     "EventDuration" : 98,
-    "EventTime" : "2022-05-21 14:16:10.000 +0100"
+    "EventTime" : "2022-05-21 14:16:10"
 }
 {
     "VideoId" : "9ca1fa24-2034-4476-b187-8d5086a53c4d",
     "UserId" : "c6e90b23-c02f-43c5-8797-47491bc97ebc",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 19,
-    "EventTime" : "2022-05-21 14:16:11.000 +0100"
+    "EventTime" : "2022-05-21 14:16:11"
 }
 {
     "VideoId" : "5af6f30d-e496-4a92-b290-041afb3efe2a",
     "UserId" : "47927b54-653c-4ab7-9417-e798d6987388",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 19,
-    "EventTime" : "2022-05-21 14:16:11.000 +0100"
+    "EventTime" : "2022-05-21 14:16:11"
 }
 {
     "VideoId" : "83450ee3-ae88-412b-b329-cdd3ed3d1b17",
     "UserId" : "74ad2046-be03-469f-adf9-d79b7ef2ed8d",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 19,
-    "EventTime" : "2022-05-21 14:16:11.000 +0100"
+    "EventTime" : "2022-05-21 14:16:11"
 }
 {
     "VideoId" : "a4d92cb8-39e3-4fbc-b233-b94e90b1af7d",
     "UserId" : "20b5d49c-44be-4e3c-8155-262d2791acae",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 19,
-    "EventTime" : "2022-05-21 14:16:11.000 +0100"
+    "EventTime" : "2022-05-21 14:16:11"
 }
 {
     "VideoId" : "fdea1c6e-707e-4905-a4d3-6fa2273df21e",
     "UserId" : "449f9c64-6484-464e-a03e-6e34513cce79",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 19,
-    "EventTime" : "2022-05-21 14:16:11.000 +0100"
+    "EventTime" : "2022-05-21 14:16:11"
 }
 {
     "VideoId" : "62d17de5-d948-4345-9c81-70191233febe",
     "UserId" : "b5b8c0e4-48a9-471f-89f4-64365d61e6ee",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 19,
-    "EventTime" : "2022-05-21 14:16:11.000 +0100"
+    "EventTime" : "2022-05-21 14:16:11"
 }
 {
     "VideoId" : "a7235417-a628-4f9a-899e-23f92f1758ec",
     "UserId" : "b9a6713a-452e-4e42-8274-ec90a2328a33",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 19,
-    "EventTime" : "2022-05-21 14:16:11.000 +0100"
+    "EventTime" : "2022-05-21 14:16:11"
 }
 {
     "VideoId" : "6e54c53d-0a18-4a3b-bb94-bfce99f5b92c",
     "UserId" : "20428f57-eb7e-4ac1-bd8e-9aa778b1dc97",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 19,
-    "EventTime" : "2022-05-21 14:16:11.000 +0100"
+    "EventTime" : "2022-05-21 14:16:11"
 }
 {
     "VideoId" : "bb91d46f-f3e9-4277-bb84-1cd7d368d956",
     "UserId" : "ace4b0bf-180d-4cdd-bdb2-9d3380993f4b",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 19,
-    "EventTime" : "2022-05-21 14:16:11.000 +0100"
+    "EventTime" : "2022-05-21 14:16:11"
 }
 {
     "VideoId" : "0e36e04c-d88c-403c-9510-f324b5f58903",
     "UserId" : "3eddfbb0-8933-455c-9dbf-7b64554b897c",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 41,
-    "EventTime" : "2022-05-21 14:16:12.000 +0100"
+    "EventTime" : "2022-05-21 14:16:12"
 }
 {
     "VideoId" : "2a261ef3-8e19-45a6-9362-fa6c08937f1d",
     "UserId" : "f10f61f3-04dc-4d96-9748-7ea04eefbe1b",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 41,
-    "EventTime" : "2022-05-21 14:16:12.000 +0100"
+    "EventTime" : "2022-05-21 14:16:12"
 }
 {
     "VideoId" : "b5ac98c4-8426-44bd-908a-669a585e81aa",
     "UserId" : "35d706ec-6e20-44e3-baa2-e9b19a14aef8",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 41,
-    "EventTime" : "2022-05-21 14:16:12.000 +0100"
+    "EventTime" : "2022-05-21 14:16:12"
 }
 {
     "VideoId" : "863b3ae3-1c3f-4787-bef1-27a8f2d58932",
     "UserId" : "08fe03d6-6c7d-41ba-b2ec-0e59f9561661",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 41,
-    "EventTime" : "2022-05-21 14:16:12.000 +0100"
+    "EventTime" : "2022-05-21 14:16:12"
 }
 {
     "VideoId" : "60a6e1a4-a6f9-4df3-b5b8-09772fbd0f70",
     "UserId" : "1c0c44fe-7521-4d66-93fc-0cbe5801a886",
     "EventType" : "STOP_VIDEO_EVENT",
     "EventDuration" : 41,
-    "EventTime" : "2022-05-21 14:16:12.000 +0100"
+    "EventTime" : "2022-05-21 14:16:12"
 }
