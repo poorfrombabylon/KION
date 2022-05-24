@@ -7,8 +7,9 @@ WORKDIR /KION
 COPY . .
 
 # Build the Go app
-RUN go build ./cmd/main.go
+RUN GOOS=linux GOARCH=amd64 go build ./cmd/main.go
 
-EXPOSE 8080:8080
+EXPOSE 8082:8082
+EXPOSE 8888:8888
 
 CMD ["./main"]
