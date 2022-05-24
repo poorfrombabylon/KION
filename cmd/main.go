@@ -8,12 +8,13 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"golang.org/x/sync/errgroup"
-	"google.golang.org/grpc"
 	"log"
 	"net"
 	"net/http"
+
+	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"golang.org/x/sync/errgroup"
+	"google.golang.org/grpc"
 )
 
 var db sql.DB
@@ -43,7 +44,7 @@ func main() {
 }
 
 func initGrpcServer(ctx context.Context) error {
-	conn, err := net.Listen("tcp", "localhost:8082")
+	conn, err := net.Listen("tcp", ":8082")
 	if err != nil {
 		log.Fatal("tcp connection error:", err.Error())
 	}

@@ -76,15 +76,18 @@ func (g *Gun) Shoot(ammo core.Ammo) {
 	g.shoot(customAmmo)
 }
 
-func (g *Gun) case1_method(client pb.KionServiceClient, ammo *Ammo) int {
+func (g *Gun) write(client pb.KionServiceClient, ammo *Ammo) int {
 	events := [4]string{"STOP_VIDEO_EVENT", "FORWARD_VIDEO_EVENT", "REVERT_VIDEO_EVENT", "EXIT_VIDEO_EVENT"}
 	rand.Seed(time.Now().Unix())
 	duration := durationpb.Duration{Seconds: int64(rand.Intn(100)), Nanos: 0}
+
 	response, err := client.CreateRecord(context.Background(), &pb.CreateRecordRequest{
 		VideoId:   uuid.UUID(uuid.New()).String(),
 		UserId:    uuid.UUID(uuid.New()).String(),
 		EventType: events[rand.Intn(len(events))],
-		Time:      &duration})
+		Time:      &duration,
+	})
+
 	fmt.Println(response)
 	if err != nil {
 		fmt.Println(err)
@@ -93,7 +96,7 @@ func (g *Gun) case1_method(client pb.KionServiceClient, ammo *Ammo) int {
 	return 200
 }
 
-func (g *Gun) case2_method(client pb.KionServiceClient, ammo *Ammo) int {
+func (g *Gun) read(client pb.KionServiceClient, ammo *Ammo) int {
 	response, err := client.GetLatestRecord(context.Background(), &pb.GetLatestRecordRequest{
 		UserId:  ammo.UserId,
 		VideoId: ammo.VideoId,
@@ -109,17 +112,19 @@ func (g *Gun) case2_method(client pb.KionServiceClient, ammo *Ammo) int {
 
 func (g *Gun) shoot(ammo *Ammo) {
 	code := 0
-	sample := netsample.Acquire(ammo.VideoId)
+	sampleId := "Writing"
 
 	conn := g.client
 	client := pb.NewKionServiceClient(&conn)
 
 	// Writing
-	code = g.case1_method(client, ammo)
+	code = g.write(client, ammo)
 
 	// Reading
-	// code = g.case2_method(client, ammo)
+	// code = g.read(client, ammo)
+	// sampleId = "Reading"
 
+	sample := netsample.Acquire(sampleId)
 	defer func() {
 		sample.SetProtoCode(code)
 		g.aggr.Report(sample)
